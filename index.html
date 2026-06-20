@@ -1,0 +1,1426 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kudla Kwasekhaya – Traditional Swati Cuisine | Organic Restaurant Eswatini</title>
+  <meta name="description" content="Kudla Kwasekhaya Online Restaurant – We Sell Organic Traditional Food. Authentic Swati cuisine made with love, served with pride. Order online for delivery in Eswatini." />
+  <meta name="keywords" content="Swati cuisine, traditional food, organic, Eswatini restaurant, Kudla Kwasekhaya, Swazi food, farm to table" />
+  <meta property="og:title" content="Kudla Kwasekhaya – Traditional Swati Cuisine" />
+  <meta property="og:description" content="We Sell Organic Traditional Food. Authentic Swati cuisine made with love." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_ZA" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Kudla Kwasekhaya Online Restaurant",
+      "description": "We Sell Organic Traditional Food. Authentic Swati cuisine made with love, served with pride.",
+      "servesCuisine": "Swati",
+      "priceRange": "R20 - R200",
+      "telephone": "+268 7654 3210",
+      "email": "hello@kudlakwasekhaya.com",
+      "address": { "@type": "PostalAddress", "streetAddress": "Plot 45, Malkerns Valley", "addressLocality": "Eswatini" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "", "closes": "" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "11:00", "closes": "21:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "10:00", "closes": "22:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "20:00" }
+      ]
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#D4693B',
+            'primary-dark': '#B8552F',
+            secondary: '#2D5A27',
+            'secondary-light': '#3D7A35',
+            accent: '#F4A236',
+            cream: '#FDF8F3',
+            darkbrown: '#2C1810',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.8s ease-out forwards',
+            'slide-in': 'slideIn 0.5s ease-out forwards',
+            'pulse-slow': 'pulse 3s infinite',
+            'bounce-custom': 'bounce 1.5s infinite',
+            'spin-slow': 'spin 8s linear infinite',
+            float: 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(40px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            slideIn: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(0)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    :root { --primary: #D4693B; --secondary: #2D5A27; --accent: #F4A236; --cream: #FDF8F3; --darkbrown: #2C1810; --transition: 0.3s ease; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--cream); color: #333; transition: background var(--transition), color var(--transition); }
+    .dark body, .dark { background: #1a0f0a; color: #e8ddd0; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1e6d8; }
+    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
+    .dark ::-webkit-scrollbar-track { background: #2c1810; }
+    .glass { background: rgba(253, 248, 243, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(253, 248, 243, 0.3); }
+    .dark .glass { background: rgba(44, 24, 16, 0.7); border: 1px solid rgba(253, 248, 243, 0.08); }
+    .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.4); }
+    .dark .glass-card { background: rgba(44, 24, 16, 0.6); border: 1px solid rgba(253, 248, 243, 0.06); }
+    img { background: #e8ddd0; color: transparent; }
+    .dark img { background: #3d2218; }
+    .gradient-text { background: linear-gradient(135deg, var(--primary), #e04a2f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .gradient-bg { background: linear-gradient(135deg, var(--primary) 0%, #e04a2f 50%, #b83a1e 100%); }
+    .gradient-bg-subtle { background: linear-gradient(135deg, #fdf8f3 0%, #f5e6d3 100%); }
+    .dark .gradient-bg-subtle { background: linear-gradient(135deg, #2c1810 0%, #3d2218 100%); }
+    .pattern-divider { height: 12px; background: repeating-linear-gradient(90deg, var(--primary) 0px, var(--primary) 12px, transparent 12px, transparent 16px, var(--accent) 16px, var(--accent) 28px, transparent 28px, transparent 32px, var(--secondary) 32px, var(--secondary) 44px, transparent 44px, transparent 48px); }
+    .pattern-divider-sm { height: 6px; background: repeating-linear-gradient(90deg, var(--primary) 0px, var(--primary) 6px, transparent 6px, transparent 9px, var(--accent) 9px, var(--accent) 15px, transparent 15px, transparent 18px); }
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+    .menu-card { transition: transform 0.4s ease, box-shadow 0.4s ease; }
+    .menu-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15); }
+    .dark .menu-card:hover { box-shadow: 0 20px 40px -12px rgba(0,0,0,0.5); }
+    .img-zoom { overflow: hidden; }
+    .img-zoom img { transition: transform 0.6s ease; }
+    .img-zoom:hover img { transform: scale(1.12); }
+    .cart-overlay { opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
+    .cart-overlay.active { opacity: 1; pointer-events: all; }
+    .cart-sidebar { transform: translateX(100%); transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+    .cart-sidebar.active { transform: translateX(0); }
+    .lightbox { opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
+    .lightbox.active { opacity: 1; pointer-events: all; }
+    .toast { opacity: 0; visibility: hidden; transform: translateY(120%); transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+    .toast.active { opacity: 1; visibility: visible; transform: translateY(0); }
+    .stat-number { display: inline-block; }
+    .skeleton { background: linear-gradient(90deg, #e8ddd0 25%, #f5e6d3 50%, #e8ddd0 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; }
+    .dark .skeleton { background: linear-gradient(90deg, #3d2218 25%, #4d3228 50%, #3d2218 75%); background-size: 200% 100%; }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+    .pill-active { background: linear-gradient(135deg, var(--primary), #e04a2f); color: white; }
+    .floating-group { position: relative; }
+    .floating-group input, .floating-group textarea, .floating-group select { width: 100%; padding: 1.2rem 0.75rem 0.4rem; border: 2px solid #d4c5b5; border-radius: 12px; background: transparent; font-size: 1rem; transition: border-color 0.3s ease; outline: none; color: inherit; }
+    .dark .floating-group input, .dark .floating-group textarea, .dark .floating-group select { border-color: #4d3228; }
+    .floating-group input:focus, .floating-group textarea:focus, .floating-group select:focus { border-color: var(--primary); }
+    .floating-group label { position: absolute; left: 0.75rem; top: 0.9rem; font-size: 1rem; color: #8a7a6a; transition: all 0.3s ease; pointer-events: none; background: transparent; padding: 0 0.25rem; }
+    .dark .floating-group label { color: #a09080; }
+    .floating-group input:focus ~ label, .floating-group textarea:focus ~ label, .floating-group select:focus ~ label, .floating-group.filled label { top: 0.2rem; font-size: 0.75rem; color: var(--primary); }
+    .floating-group textarea { min-height: 100px; resize: vertical; }
+    .spinner { width: 20px; height: 20px; border: 3px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.6s linear infinite; display: inline-block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .progress-bar { transition: width 0.1s linear; }
+    .neo-btn { background: var(--cream); box-shadow: 6px 6px 12px rgba(0,0,0,0.06), -6px -6px 12px rgba(255,255,255,0.8); border-radius: 16px; transition: box-shadow 0.3s ease; }
+    .dark .neo-btn { background: #2c1810; box-shadow: 6px 6px 12px rgba(0,0,0,0.4), -6px -6px 12px rgba(60,30,20,0.3); }
+    .neo-btn:hover { box-shadow: 4px 4px 8px rgba(0,0,0,0.08), -4px -4px 8px rgba(255,255,255,0.6); }
+    .ndebe-pattern { background: linear-gradient(45deg, var(--primary) 25%, transparent 25%), linear-gradient(-45deg, var(--primary) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--primary) 75%), linear-gradient(-45deg, transparent 75%, var(--primary) 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px; opacity: 0.1; }
+    .carousel-track { display: flex; transition: transform 0.5s ease; }
+    .typing-cursor::after { content: '|'; animation: blink 1s infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    #confetti-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; }
+    .mobile-nav { transform: translateX(100%); transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+    .mobile-nav.active { transform: translateX(0); }
+  </style>
+</head>
+<body class="bg-cream dark:bg-darkbrown text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+<canvas id="confetti-canvas"></canvas>
+
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 glass">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <a href="#hero" class="flex items-center gap-2 group" aria-label="Kudla Kwasekhaya Home">
+        <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white text-lg transition-transform duration-300 group-hover:rotate-12"><i class="fas fa-leaf"></i></div>
+        <div class="hidden sm:block"><span class="font-serif text-xl font-bold text-darkbrown dark:text-cream">Kudla<span class="text-primary">Kwasekhaya</span></span></div>
+      </a>
+      <div class="hidden lg:flex items-center gap-1">
+        <a href="#hero" class="nav-link px-3 py-2 text-sm font-medium rounded-lg hover:text-primary transition-colors">Home</a>
+        <a href="#about" class="nav-link px-3 py-2 text-sm font-medium rounded-lg hover:text-primary transition-colors">About</a>
+        <a href="#menu" class="nav-link px-3 py-2 text-sm font-medium rounded-lg hover:text-primary transition-colors">Menu</a>
+        <a href="#order-online" class="nav-link px-3 py-2 text-sm font-medium rounded-lg hover:text-primary transition-colors">Order</a>
+        <a href="#reservations" class="nav-link px-3 py-2 text-sm font-medium rounded-lg hover:text-primary transition-colors">Reservations</a>
+        <a href="#gallery" class="nav-link px-3 py-2 text-sm font-medium rounded-lg hover:text-primary transition-colors">Gallery</a>
+        <a href="#testimonials" class="nav-link px-3 py-2 text-sm font-medium rounded-lg hover:text-primary transition-colors">Reviews</a>
+        <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium rounded-lg hover:text-primary transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="hidden md:block relative">
+          <input type="text" id="nav-search" placeholder="Search..." class="w-0 lg:w-32 xl:w-40 py-1.5 pl-8 pr-3 text-sm rounded-full border border-transparent focus:border-primary bg-transparent transition-all duration-300 focus:w-48 xl:focus:w-56 cursor-pointer focus:cursor-text" />
+          <i class="fas fa-search absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm pointer-events-none"></i>
+        </div>
+        <button id="dark-toggle" class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+          <i class="fas fa-moon text-lg text-gray-600 dark:text-accent dark:hidden"></i>
+          <i class="fas fa-sun text-lg text-accent hidden dark:block"></i>
+        </button>
+        <button id="cart-btn" class="relative w-9 h-9 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Open cart">
+          <i class="fas fa-shopping-bag text-lg text-gray-600 dark:text-gray-300"></i>
+          <span id="cart-badge" class="absolute -top-1 -right-1 w-5 h-5 rounded-full gradient-bg text-white text-[10px] font-bold flex items-center justify-center hidden animate-bounce-custom">0</span>
+        </button>
+        <button id="hamburger" class="lg:hidden w-9 h-9 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Open menu">
+          <i class="fas fa-bars text-lg text-gray-600 dark:text-gray-300"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="mobile-nav" class="mobile-nav fixed top-0 right-0 h-full w-72 bg-cream dark:bg-darkbrown z-50 shadow-2xl lg:hidden">
+  <div class="flex justify-end p-4">
+    <button id="mobile-close" class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Close menu"><i class="fas fa-times text-xl text-gray-600 dark:text-gray-300"></i></button>
+  </div>
+  <div class="flex flex-col gap-2 px-6">
+    <a href="#hero" class="mobile-link py-3 text-lg font-medium border-b border-gray-200 dark:border-gray-700 hover:text-primary transition-colors">Home</a>
+    <a href="#about" class="mobile-link py-3 text-lg font-medium border-b border-gray-200 dark:border-gray-700 hover:text-primary transition-colors">About</a>
+    <a href="#menu" class="mobile-link py-3 text-lg font-medium border-b border-gray-200 dark:border-gray-700 hover:text-primary transition-colors">Menu</a>
+    <a href="#order-online" class="mobile-link py-3 text-lg font-medium border-b border-gray-200 dark:border-gray-700 hover:text-primary transition-colors">Order</a>
+    <a href="#reservations" class="mobile-link py-3 text-lg font-medium border-b border-gray-200 dark:border-gray-700 hover:text-primary transition-colors">Reservations</a>
+    <a href="#gallery" class="mobile-link py-3 text-lg font-medium border-b border-gray-200 dark:border-gray-700 hover:text-primary transition-colors">Gallery</a>
+    <a href="#testimonials" class="mobile-link py-3 text-lg font-medium border-b border-gray-200 dark:border-gray-700 hover:text-primary transition-colors">Reviews</a>
+    <a href="#contact" class="mobile-link py-3 text-lg font-medium border-b border-gray-200 dark:border-gray-700 hover:text-primary transition-colors">Contact</a>
+  </div>
+  <div class="absolute bottom-8 left-6 right-6">
+    <div class="pattern-divider-sm rounded mb-4"></div>
+    <p class="text-sm text-gray-500 dark:text-gray-400 italic">"Umuntu ngumuntu ngabantu"</p>
+  </div>
+</div>
+<div id="mobile-overlay" class="fixed inset-0 bg-black/40 z-40 hidden lg:hidden"></div>
+
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 bg-gradient-to-br from-darkbrown/90 via-darkbrown/70 to-primary/60 z-10"></div>
+    <div class="absolute inset-0 ndebe-pattern z-20"></div>
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80')] bg-cover bg-center z-0"></div>
+  </div>
+  <div class="absolute inset-0 z-20 overflow-hidden pointer-events-none">
+    <div class="absolute w-2 h-2 bg-accent/30 rounded-full top-1/4 left-1/4 animate-float" style="animation-delay:0s"></div>
+    <div class="absolute w-3 h-3 bg-primary/30 rounded-full top-1/3 left-2/3 animate-float" style="animation-delay:1s"></div>
+    <div class="absolute w-1.5 h-1.5 bg-accent/20 rounded-full top-2/3 left-1/3 animate-float" style="animation-delay:2s"></div>
+    <div class="absolute w-2.5 h-2.5 bg-white/20 rounded-full top-1/2 left-1/2 animate-float" style="animation-delay:0.5s"></div>
+    <div class="absolute w-1 h-1 bg-accent/30 rounded-full top-3/4 left-3/4 animate-float" style="animation-delay:1.5s"></div>
+    <div class="absolute w-2 h-2 bg-primary/20 rounded-full top-1/5 left-4/5 animate-float" style="animation-delay:2.5s"></div>
+  </div>
+  <div class="relative z-30 text-center px-4 max-w-5xl mx-auto">
+    <div class="reveal"><p class="text-accent font-medium tracking-[0.3em] text-sm md:text-base uppercase mb-4"><i class="fas fa-leaf mr-2"></i>Authentic Swati Cuisine</p></div>
+    <h1 class="reveal font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-cream mb-4 leading-tight">Kudla <span class="text-primary">Kwasekhaya</span></h1>
+    <div class="reveal reveal-delay-1"><p class="font-serif text-xl sm:text-2xl md:text-3xl text-accent italic mb-3">"We Sell Organic Traditional Food"</p></div>
+    <div class="reveal reveal-delay-2"><p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-8">Authentic Swati Cuisine – Made with Love, Served with Pride. Farm-to-table organic goodness from the heart of Eswatini.</p></div>
+    <div class="reveal reveal-delay-3 flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="#menu" class="px-8 py-3.5 gradient-bg text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center gap-2"><i class="fas fa-utensils"></i> Explore Menu</a>
+      <a href="#order-online" class="px-8 py-3.5 border-2 border-accent text-accent font-semibold rounded-full hover:bg-accent hover:text-darkbrown transition-all duration-300 flex items-center gap-2"><i class="fas fa-truck"></i> Order Now</a>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 animate-bounce-custom">
+    <a href="#about" aria-label="Scroll down" class="text-white/60 hover:text-accent transition-colors"><i class="fas fa-chevron-down text-2xl"></i></a>
+  </div>
+</section>
+<div class="pattern-divider"></div>
+
+<section id="about" class="py-20 lg:py-28 bg-cream dark:bg-darkbrown">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+      <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Our Story</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-darkbrown dark:text-cream mt-2">About Kudla Kwasekhaya</h2>
+      <div class="w-20 h-1 gradient-bg rounded-full mx-auto mt-4"></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+      <div class="reveal">
+        <div class="relative">
+          <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Kudla Kwasekhaya restaurant interior" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div class="absolute -bottom-4 -right-4 w-32 h-32 rounded-2xl gradient-bg flex items-center justify-center text-white shadow-xl">
+            <div class="text-center"><p class="text-3xl font-bold">Since</p><p class="text-4xl font-bold">2010</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <h3 class="font-serif text-3xl font-bold text-darkbrown dark:text-cream mb-4">Bringing the Taste of <span class="gradient-text">Home</span> to You</h3>
+        <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">Kudla Kwasekhaya means "Home Food" in siSwati. We are a family-owned restaurant born from a deep love for our land, our culture, and the traditional cooking methods passed down through generations.</p>
+        <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">Every dish we serve tells a story of Eswatini – from the fertile valleys of Malkerns to the cooking fires of our grandmothers. We use only organic, locally-sourced ingredients, prepared with time-honored techniques and a modern touch.</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-start gap-3"><i class="fas fa-seedling text-primary mt-1"></i><div><p class="font-semibold">100% Organic</p><p class="text-sm text-gray-500 dark:text-gray-400">Farm-fresh ingredients</p></div></div>
+          <div class="flex items-start gap-3"><i class="fas fa-hands-bubbles text-primary mt-1"></i><div><p class="font-semibold">Traditional</p><p class="text-sm text-gray-500 dark:text-gray-400">Generational recipes</p></div></div>
+          <div class="flex items-start gap-3"><i class="fas fa-heart text-primary mt-1"></i><div><p class="font-semibold">Made with Love</p><p class="text-sm text-gray-500 dark:text-gray-400">From our family to yours</p></div></div>
+          <div class="flex items-start gap-3"><i class="fas fa-leaf text-primary mt-1"></i><div><p class="font-semibold">Sustainable</p><p class="text-sm text-gray-500 dark:text-gray-400">Eco-friendly practices</p></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 reveal">
+      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text" data-target="2010">0</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Established</p></div>
+      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text" data-target="100">0</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Traditional Dishes</p></div>
+      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text" data-target="5000">0</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Happy Customers</p></div>
+      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text" data-target="15">0</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Organic Farms</p></div>
+    </div>
+    <div class="mt-20 reveal">
+      <h3 class="font-serif text-3xl font-bold text-center text-darkbrown dark:text-cream mb-10">Our <span class="gradient-text">Core Values</span></h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass-card rounded-2xl p-6 text-center group hover:-translate-y-2 transition-all duration-300"><div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform"><i class="fas fa-wheat-awn text-white text-xl"></i></div><h4 class="font-semibold text-lg">Organic First</h4><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">100% natural, no preservatives</p></div>
+        <div class="glass-card rounded-2xl p-6 text-center group hover:-translate-y-2 transition-all duration-300"><div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform"><i class="fas fa-people-arrows text-white text-xl"></i></div><h4 class="font-semibold text-lg">Community</h4><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Supporting local farmers</p></div>
+        <div class="glass-card rounded-2xl p-6 text-center group hover:-translate-y-2 transition-all duration-300"><div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform"><i class="fas fa-book-open text-white text-xl"></i></div><h4 class="font-semibold text-lg">Heritage</h4><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Preserving Swati culture</p></div>
+        <div class="glass-card rounded-2xl p-6 text-center group hover:-translate-y-2 transition-all duration-300"><div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform"><i class="fas fa-hand-holding-heart text-white text-xl"></i></div><h4 class="font-semibold text-lg">Hospitality</h4><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Every guest is family</p></div>
+      </div>
+    </div>
+    <div class="mt-20 reveal">
+      <div class="max-w-lg mx-auto glass-card rounded-2xl p-8 text-center">
+        <i class="fas fa-clock text-3xl text-primary mb-3"></i>
+        <h3 class="font-serif text-2xl font-bold text-darkbrown dark:text-cream mb-4">Opening Hours</h3>
+        <div class="space-y-2 text-sm">
+          <p class="flex justify-between"><span>Monday</span><span class="text-red-500 font-medium">Closed</span></p>
+          <p class="flex justify-between"><span>Tue – Thu</span><span>11:00 AM – 9:00 PM</span></p>
+          <p class="flex justify-between"><span>Fri – Sat</span><span>10:00 AM – 10:00 PM</span></p>
+          <p class="flex justify-between"><span>Sunday</span><span>12:00 PM – 8:00 PM</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pattern-divider"></div>
+
+<section id="menu" class="py-20 lg:py-28 gradient-bg-subtle dark:bg-darkbrown/95">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Our Menu</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-darkbrown dark:text-cream mt-2">Traditional Swati Cuisine</h2>
+      <div class="w-20 h-1 gradient-bg rounded-full mx-auto mt-4"></div>
+      <p class="text-gray-600 dark:text-gray-400 mt-3 max-w-2xl mx-auto">Every dish is a celebration of our heritage – organic, authentic, and made from the heart.</p>
+    </div>
+    <div class="reveal flex flex-wrap justify-center gap-2 mb-6">
+      <button class="cat-tab pill-active px-5 py-2 rounded-full text-sm font-medium transition-all" data-cat="all">All <span class="ml-1 opacity-70" id="menu-count">(0)</span></button>
+      <button class="cat-tab px-5 py-2 rounded-full text-sm font-medium bg-white/60 dark:bg-darkbrown/60 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" data-cat="Main Courses">Main Courses</button>
+      <button class="cat-tab px-5 py-2 rounded-full text-sm font-medium bg-white/60 dark:bg-darkbrown/60 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" data-cat="Snacks">Snacks</button>
+      <button class="cat-tab px-5 py-2 rounded-full text-sm font-medium bg-white/60 dark:bg-darkbrown/60 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" data-cat="Drinks">Drinks</button>
+      <button class="cat-tab px-5 py-2 rounded-full text-sm font-medium bg-white/60 dark:bg-darkbrown/60 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" data-cat="Desserts">Desserts</button>
+      <button class="cat-tab px-5 py-2 rounded-full text-sm font-medium bg-white/60 dark:bg-darkbrown/60 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" data-cat="Combo Meals">Combo Meals</button>
+    </div>
+    <div class="reveal reveal-delay-1 flex flex-wrap justify-center gap-2 mb-6">
+      <button class="diet-filter px-4 py-1.5 rounded-full text-xs font-medium border border-gray-300 dark:border-gray-600 hover:border-primary transition-all" data-diet="all">All</button>
+      <button class="diet-filter px-4 py-1.5 rounded-full text-xs font-medium border border-gray-300 dark:border-gray-600 hover:border-primary transition-all" data-diet="Vegetarian">🌱 Vegetarian</button>
+      <button class="diet-filter px-4 py-1.5 rounded-full text-xs font-medium border border-gray-300 dark:border-gray-600 hover:border-primary transition-all" data-diet="Vegan">🌿 Vegan</button>
+      <button class="diet-filter px-4 py-1.5 rounded-full text-xs font-medium border border-gray-300 dark:border-gray-600 hover:border-primary transition-all" data-diet="Gluten-Free">🌾 Gluten-Free</button>
+      <button class="diet-filter px-4 py-1.5 rounded-full text-xs font-medium border border-gray-300 dark:border-gray-600 hover:border-primary transition-all" data-diet="Spicy">🌶️ Spicy</button>
+    </div>
+    <div class="reveal reveal-delay-2 max-w-md mx-auto mb-8 relative">
+      <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+      <input type="text" id="menu-search" placeholder="Search dishes..." class="w-full pl-10 pr-4 py-3 rounded-full border-2 border-gray-200 dark:border-gray-700 bg-white/60 dark:bg-darkbrown/60 focus:border-primary outline-none transition-colors text-sm" />
+    </div>
+    <div id="menu-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+    <div id="no-results" class="hidden text-center py-16 reveal">
+      <i class="fas fa-search text-5xl text-gray-300 dark:text-gray-600 mb-4"></i>
+      <h3 class="text-xl font-semibold text-gray-500 dark:text-gray-400">No dishes found</h3>
+      <p class="text-gray-400 dark:text-gray-500 mt-1">Try adjusting your search or filters</p>
+    </div>
+  </div>
+</section>
+<div class="pattern-divider"></div>
+
+<section id="order-online" class="py-20 lg:py-28 bg-cream dark:bg-darkbrown">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Order Online</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-darkbrown dark:text-cream mt-2">Order from Our Menu</h2>
+      <div class="w-20 h-1 gradient-bg rounded-full mx-auto mt-4"></div>
+      <p class="text-gray-600 dark:text-gray-400 mt-3">Add items from the menu above to your cart, then checkout below.</p>
+    </div>
+    <div class="reveal max-w-lg mx-auto">
+      <div class="glass-card rounded-2xl p-6 text-center">
+        <i class="fas fa-shopping-bag text-4xl text-primary mb-3"></i>
+        <p class="text-lg font-semibold">Your Cart</p>
+        <p id="cart-summary-text" class="text-gray-500 dark:text-gray-400 text-sm">Your cart is empty. Browse our menu to add items.</p>
+        <div id="cart-summary-details" class="hidden mt-4 space-y-2 text-left">
+          <div id="cart-summary-items" class="max-h-48 overflow-y-auto space-y-2"></div>
+          <hr class="border-gray-200 dark:border-gray-700" />
+          <div class="flex justify-between text-sm"><span>Subtotal:</span><span id="cart-subtotal">R0.00</span></div>
+          <div class="flex justify-between text-sm"><span>VAT (15%):</span><span id="cart-vat">R0.00</span></div>
+          <div class="flex justify-between text-sm"><span>Delivery Fee:</span><span id="cart-delivery">R0.00</span></div>
+          <div class="flex justify-between font-bold text-lg border-t border-gray-200 dark:border-gray-700 pt-2"><span>Total:</span><span id="cart-total" class="text-primary">R0.00</span></div>
+        </div>
+        <button id="checkout-btn" class="mt-4 w-full px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed" disabled>Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pattern-divider"></div>
+
+<section id="reservations" class="py-20 lg:py-28 gradient-bg-subtle dark:bg-darkbrown/95">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Book a Table</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-darkbrown dark:text-cream mt-2">Make a Reservation</h2>
+      <div class="w-20 h-1 gradient-bg rounded-full mx-auto mt-4"></div>
+      <p class="text-gray-600 dark:text-gray-400 mt-3">Reserve your table for an authentic Swati dining experience.</p>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+      <div class="reveal glass-card rounded-2xl p-8">
+        <h3 class="font-serif text-2xl font-bold text-darkbrown dark:text-cream mb-6">Reservation Details</h3>
+        <form id="reservation-form" class="space-y-5">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="floating-group"><input type="text" id="res-name" required autocomplete="name" /><label for="res-name">Full Name</label></div>
+            <div class="floating-group"><input type="tel" id="res-phone" required autocomplete="tel" /><label for="res-phone">Phone Number</label></div>
+          </div>
+          <div class="floating-group"><input type="email" id="res-email" required autocomplete="email" /><label for="res-email">Email Address</label></div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="floating-group"><input type="date" id="res-date" required min="" /><label for="res-date">Date</label></div>
+            <div class="floating-group"><select id="res-time" required><option value="" disabled selected></option></select><label for="res-time">Time</label></div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Number of Guests</label>
+              <div class="flex items-center gap-4">
+                <button type="button" class="guest-stepper w-10 h-10 rounded-full border-2 border-gray-300 dark:border-gray-600 flex items-center justify-center hover:border-primary transition-colors" data-action="minus">−</button>
+                <span id="guest-count" class="text-2xl font-bold w-8 text-center">2</span>
+                <button type="button" class="guest-stepper w-10 h-10 rounded-full border-2 border-gray-300 dark:border-gray-600 flex items-center justify-center hover:border-primary transition-colors" data-action="plus">+</button>
+              </div>
+            </div>
+            <div class="floating-group">
+              <select id="res-occasion"><option value="" disabled selected></option><option value="Dinner">Dinner</option><option value="Lunch">Lunch</option><option value="Celebration">Celebration</option><option value="Business">Business</option><option value="Other">Other</option></select>
+              <label for="res-occasion">Occasion</label>
+            </div>
+          </div>
+          <div class="floating-group">
+            <textarea id="res-requests" maxlength="300"></textarea>
+            <label for="res-requests">Special Requests</label>
+            <span class="text-xs text-gray-400 absolute right-3 bottom-3" id="char-count">300</span>
+          </div>
+          <button type="submit" id="res-submit" class="w-full px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all flex items-center justify-center gap-2"><i class="fas fa-calendar-check"></i> Book Now</button>
+        </form>
+      </div>
+      <div class="reveal reveal-delay-1 space-y-6">
+        <div class="glass-card rounded-2xl p-6"><i class="fas fa-clock text-2xl text-primary mb-2"></i><h4 class="font-semibold mb-2">Available Times</h4><p class="text-sm text-gray-500 dark:text-gray-400">We serve lunch and dinner. Walk-ins welcome, but reservations recommended for weekends.</p></div>
+        <div class="glass-card rounded-2xl p-6"><i class="fas fa-users text-2xl text-primary mb-2"></i><h4 class="font-semibold mb-2">Group Bookings</h4><p class="text-sm text-gray-500 dark:text-gray-400">For groups larger than 10, please call us at +268 7654 3210.</p></div>
+        <div class="glass-card rounded-2xl p-6"><i class="fas fa-shield-alt text-2xl text-primary mb-2"></i><h4 class="font-semibold mb-2">COVID-19 Safety</h4><p class="text-sm text-gray-500 dark:text-gray-400">We follow all health protocols. Tables are sanitized between guests.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pattern-divider"></div>
+
+<section id="gallery" class="py-20 lg:py-28 bg-cream dark:bg-darkbrown">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Gallery</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-darkbrown dark:text-cream mt-2">A Taste of Kudla Kwasekhaya</h2>
+      <div class="w-20 h-1 gradient-bg rounded-full mx-auto mt-4"></div>
+    </div>
+    <div class="reveal flex flex-wrap justify-center gap-2 mb-8">
+      <button class="gallery-filter pill-active px-5 py-2 rounded-full text-sm font-medium transition-all" data-gcat="all">All</button>
+      <button class="gallery-filter px-5 py-2 rounded-full text-sm font-medium bg-white/60 dark:bg-darkbrown/60 hover:bg-primary/10 transition-all" data-gcat="Food">Food</button>
+      <button class="gallery-filter px-5 py-2 rounded-full text-sm font-medium bg-white/60 dark:bg-darkbrown/60 hover:bg-primary/10 transition-all" data-gcat="Interior">Interior</button>
+      <button class="gallery-filter px-5 py-2 rounded-full text-sm font-medium bg-white/60 dark:bg-darkbrown/60 hover:bg-primary/10 transition-all" data-gcat="Family">Family</button>
+      <button class="gallery-filter px-5 py-2 rounded-full text-sm font-medium bg-white/60 dark:bg-darkbrown/60 hover:bg-primary/10 transition-all" data-gcat="Events">Events</button>
+    </div>
+    <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 reveal"></div>
+  </div>
+</section>
+<div class="pattern-divider"></div>
+
+<section id="testimonials" class="py-20 lg:py-28 gradient-bg-subtle dark:bg-darkbrown/95">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Testimonials</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-darkbrown dark:text-cream mt-2">What Our Guests Say</h2>
+      <div class="w-20 h-1 gradient-bg rounded-full mx-auto mt-4"></div>
+    </div>
+    <div class="relative max-w-3xl mx-auto reveal">
+      <div class="overflow-hidden rounded-2xl"><div id="testimonial-track" class="carousel-track"></div></div>
+      <div class="flex items-center justify-center gap-4 mt-6">
+        <button id="test-prev" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary hover:text-white transition-all" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div id="test-dots" class="flex gap-2"></div>
+        <button id="test-next" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary hover:text-white transition-all" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="w-full h-1 bg-gray-200 dark:bg-gray-700 rounded-full mt-4 overflow-hidden"><div id="test-progress" class="progress-bar h-full gradient-bg rounded-full" style="width:100%"></div></div>
+      <div class="text-center mt-6"><button id="write-review-btn" class="px-6 py-2.5 gradient-bg text-white rounded-full font-medium hover:shadow-lg transition-all text-sm"><i class="fas fa-star mr-1"></i> Write a Review</button></div>
+    </div>
+  </div>
+</section>
+
+<div class="pattern-divider"></div>
+
+<section id="blog" class="py-20 lg:py-28 bg-cream dark:bg-darkbrown">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Food Stories</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-darkbrown dark:text-cream mt-2">From Our Kitchen</h2>
+      <div class="w-20 h-1 gradient-bg rounded-full mx-auto mt-4"></div>
+    </div>
+    <div id="blog-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </div>
+</section>
+
+<div class="pattern-divider"></div>
+
+<section id="contact" class="py-20 lg:py-28 gradient-bg-subtle dark:bg-darkbrown/95">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase">Contact Us</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold text-darkbrown dark:text-cream mt-2">Get in Touch</h2>
+      <div class="w-20 h-1 gradient-bg rounded-full mx-auto mt-4"></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-12">
+      <div class="reveal glass-card rounded-2xl p-8">
+        <h3 class="font-serif text-2xl font-bold text-darkbrown dark:text-cream mb-6">Send Us a Message</h3>
+        <form id="contact-form" class="space-y-5">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="floating-group"><input type="text" id="contact-name" required autocomplete="name" /><label for="contact-name">Your Name</label></div>
+            <div class="floating-group"><input type="email" id="contact-email" required autocomplete="email" /><label for="contact-email">Your Email</label></div>
+          </div>
+          <div class="floating-group">
+            <select id="contact-subject" required><option value="" disabled selected></option><option value="General Inquiry">General Inquiry</option><option value="Catering">Catering</option><option value="Events">Events</option><option value="Feedback">Feedback</option><option value="Partnership">Partnership</option></select>
+            <label for="contact-subject">Subject</label>
+          </div>
+          <div class="floating-group">
+            <textarea id="contact-message" required maxlength="500"></textarea>
+            <label for="contact-message">Your Message</label>
+            <span class="text-xs text-gray-400 absolute right-3 bottom-3" id="contact-char-count">500</span>
+          </div>
+          <button type="submit" id="contact-submit" class="w-full px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all flex items-center justify-center gap-2"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+      <div class="reveal reveal-delay-1 space-y-6">
+        <div class="glass-card rounded-2xl p-6 space-y-4">
+          <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white shrink-0"><i class="fas fa-phone"></i></div><div><p class="text-sm text-gray-500 dark:text-gray-400">Phone</p><p class="font-semibold">+268 7654 3210</p></div></div>
+          <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white shrink-0"><i class="fas fa-envelope"></i></div><div><p class="text-sm text-gray-500 dark:text-gray-400">Email</p><p class="font-semibold">hello@kudlakwasekhaya.com</p></div></div>
+          <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white shrink-0"><i class="fas fa-location-dot"></i></div><div><p class="text-sm text-gray-500 dark:text-gray-400">Address</p><p class="font-semibold">Plot 45, Malkerns Valley, Eswatini</p></div></div>
+          <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white shrink-0"><i class="fas fa-clock"></i></div><div><p class="text-sm text-gray-500 dark:text-gray-400">Hours</p><p class="font-semibold">Tue-Sun | Mon Closed</p></div></div>
+        </div>
+        <div class="rounded-2xl overflow-hidden h-64 shadow-lg">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11775.123456789!2d31.3!3d-26.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDMwJzAwLjAiUyAzMcKwMTgnMDAuMCJF!5e0!3m2!1sen!2sza!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kudla Kwasekhaya Location"></iframe>
+        </div>
+        <div class="flex justify-center gap-3">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="w-11 h-11 rounded-full glass-card flex items-center justify-center hover:gradient-bg hover:text-white transition-all text-xl text-gray-600 dark:text-gray-300" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="w-11 h-11 rounded-full glass-card flex items-center justify-center hover:gradient-bg hover:text-white transition-all text-xl text-gray-600 dark:text-gray-300" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" class="w-11 h-11 rounded-full glass-card flex items-center justify-center hover:gradient-bg hover:text-white transition-all text-xl text-gray-600 dark:text-gray-300" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/26876543210" target="_blank" rel="noopener" class="w-11 h-11 rounded-full glass-card flex items-center justify-center hover:gradient-bg hover:text-white transition-all text-xl text-gray-600 dark:text-gray-300" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="w-11 h-11 rounded-full glass-card flex items-center justify-center hover:gradient-bg hover:text-white transition-all text-xl text-gray-600 dark:text-gray-300" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="pattern-divider"></div>
+
+<footer class="bg-darkbrown text-cream py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-4"><div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white"><i class="fas fa-leaf"></i></div><span class="font-serif text-2xl font-bold">Kudla<span class="text-primary">Kwasekhaya</span></span></div>
+        <p class="text-sm text-gray-400 italic mb-3">"We Sell Organic Traditional Food"</p>
+        <p class="text-sm text-gray-500">Authentic Swati cuisine made with love, served with pride. Farm-to-table organic goodness from Eswatini.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#hero" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="#about" class="hover:text-primary transition-colors">About Us</a></li>
+          <li><a href="#menu" class="hover:text-primary transition-colors">Menu</a></li>
+          <li><a href="#order-online" class="hover:text-primary transition-colors">Order Online</a></li>
+          <li><a href="#reservations" class="hover:text-primary transition-colors">Reservations</a></li>
+          <li><a href="#gallery" class="hover:text-primary transition-colors">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><i class="fas fa-phone text-primary mr-2 w-4"></i>+268 7654 3210</li>
+          <li><i class="fas fa-envelope text-primary mr-2 w-4"></i>hello@kudlakwasekhaya.com</li>
+          <li><i class="fas fa-location-dot text-primary mr-2 w-4"></i>Plot 45, Malkerns Valley</li>
+          <li><i class="fas fa-clock text-primary mr-2 w-4"></i>Tue–Sun | Mon Closed</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-4">Join Our Community</h4>
+        <p class="text-sm text-gray-400 mb-3">Get updates on new dishes and events.</p>
+        <div class="flex">
+          <input type="email" id="newsletter-email" placeholder="Your email" class="flex-1 px-4 py-2.5 rounded-l-full bg-darkbrown border border-gray-700 focus:border-primary outline-none text-sm" />
+          <button id="newsletter-btn" class="px-5 py-2.5 gradient-bg text-white rounded-r-full hover:shadow-lg transition-all text-sm"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <p class="text-xs text-gray-500 mt-3 italic">"Umuntu ngumuntu ngabantu"</p>
+      </div>
+    </div>
+    <hr class="border-gray-700 my-8" />
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-500">&copy; <span id="current-year">2026</span> Kudla Kwasekhaya. All rights reserved.</p>
+      <div class="flex gap-3">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-gray-500" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-gray-500" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-gray-500" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/26876543210" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-gray-500" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-gray-500" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="fixed bottom-24 right-4 z-40 w-11 h-11 rounded-full gradient-bg text-white shadow-lg flex items-center justify-center opacity-0 translate-y-4 pointer-events-none transition-all duration-300 hover:scale-110" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<a href="https://wa.me/26876543210?text=Hello%20Kudla%20Kwasekhaya!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="fixed bottom-8 right-4 z-40 w-14 h-14 rounded-full bg-green-500 text-white shadow-lg flex items-center justify-center hover:bg-green-600 hover:scale-110 transition-all duration-300 animate-pulse-slow" aria-label="Order via WhatsApp"><i class="fab fa-whatsapp text-2xl"></i></a>
+
+<div id="cart-overlay" class="cart-overlay fixed inset-0 bg-black/50 z-50">
+  <div id="cart-sidebar" class="cart-sidebar fixed top-0 right-0 h-full w-full max-w-md bg-cream dark:bg-darkbrown shadow-2xl overflow-y-auto">
+    <div class="sticky top-0 glass z-10 p-4 flex items-center justify-between">
+      <h3 class="font-serif text-xl font-bold"><i class="fas fa-shopping-bag text-primary mr-2"></i>Your Order</h3>
+      <button id="cart-close" class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"><i class="fas fa-times text-xl"></i></button>
+    </div>
+    <div id="cart-items" class="p-4 space-y-3">
+      <div class="text-center py-12 text-gray-400"><i class="fas fa-shopping-bag text-5xl mb-3"></i><p>Your cart is empty</p><p class="text-sm">Browse our menu and add items you'd like to order.</p></div>
+    </div>
+    <div id="cart-footer" class="hidden sticky bottom-0 glass p-4 space-y-3">
+      <div class="space-y-1 text-sm">
+        <div class="flex justify-between"><span>Subtotal</span><span id="sidebar-subtotal">R0.00</span></div>
+        <div class="flex justify-between"><span>VAT (15%)</span><span id="sidebar-vat">R0.00</span></div>
+        <div class="flex justify-between"><span>Delivery Fee</span><span id="sidebar-delivery">R0.00</span></div>
+        <div class="flex justify-between font-bold text-lg border-t border-gray-200 dark:border-gray-700 pt-2"><span>Total</span><span id="sidebar-total" class="text-primary">R0.00</span></div>
+      </div>
+      <button id="sidebar-checkout" class="w-full px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all">Proceed to Checkout</button>
+    </div>
+  </div>
+</div>
+
+<div id="checkout-modal" class="fixed inset-0 bg-black/50 z-[60] hidden items-center justify-center p-4">
+  <div id="checkout-content" class="bg-cream dark:bg-darkbrown rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto shadow-2xl">
+    <div class="sticky top-0 glass z-10 p-4 flex items-center justify-between">
+      <h3 class="font-serif text-xl font-bold"><i class="fas fa-credit-card text-primary mr-2"></i>Checkout</h3>
+      <button id="checkout-close" class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"><i class="fas fa-times text-xl"></i></button>
+    </div>
+    <div class="flex items-center justify-center gap-2 px-4 py-3 text-xs">
+      <span class="step-indicator w-8 h-8 rounded-full gradient-bg text-white flex items-center justify-center font-bold">1</span>
+      <div class="w-8 h-0.5 bg-gray-300 dark:bg-gray-600 step-line"></div>
+      <span class="step-indicator w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600 text-white flex items-center justify-center font-bold">2</span>
+      <div class="w-8 h-0.5 bg-gray-300 dark:bg-gray-600 step-line"></div>
+      <span class="step-indicator w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600 text-white flex items-center justify-center font-bold">3</span>
+    </div>
+    <div id="checkout-step-1" class="p-4 space-y-4">
+      <h4 class="font-semibold text-lg">Personal Details</h4>
+      <div class="floating-group"><input type="text" id="co-name" required autocomplete="name" /><label for="co-name">Full Name</label></div>
+      <div class="floating-group"><input type="tel" id="co-phone" required autocomplete="tel" /><label for="co-phone">Phone Number</label></div>
+      <div class="floating-group"><input type="email" id="co-email" required autocomplete="email" /><label for="co-email">Email Address</label></div>
+      <button type="button" class="checkout-next w-full px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all" data-step="1">Next - Delivery</button>
+    </div>
+    <div id="checkout-step-2" class="p-4 space-y-4 hidden">
+      <h4 class="font-semibold text-lg">Delivery Details</h4>
+      <div class="floating-group"><input type="text" id="co-address" required autocomplete="street-address" /><label for="co-address">Delivery Address</label></div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="floating-group"><input type="text" id="co-city" required autocomplete="address-level2" /><label for="co-city">City</label></div>
+        <div class="floating-group"><input type="text" id="co-zip" required /><label for="co-zip">Postal Code</label></div>
+      </div>
+      <div class="floating-group"><textarea id="co-notes" maxlength="200"></textarea><label for="co-notes">Delivery Notes (optional)</label></div>
+      <div class="flex gap-3">
+        <button type="button" class="checkout-back w-1/3 px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-full font-semibold hover:border-primary transition-all" data-step="2">Back</button>
+        <button type="button" class="checkout-next flex-1 px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all" data-step="2">Next - Payment</button>
+      </div>
+    </div>
+    <div id="checkout-step-3" class="p-4 space-y-4 hidden">
+      <h4 class="font-semibold text-lg">Order Summary</h4>
+      <div id="co-summary-items" class="space-y-2 max-h-32 overflow-y-auto text-sm"></div>
+      <hr class="border-gray-200 dark:border-gray-700" />
+      <div class="space-y-1 text-sm">
+        <div class="flex justify-between"><span>Subtotal</span><span id="co-subtotal">R0.00</span></div>
+        <div class="flex justify-between"><span>VAT (15%)</span><span id="co-vat">R0.00</span></div>
+        <div class="flex justify-between"><span>Delivery Fee</span><span id="co-delivery">R0.00</span></div>
+        <div class="flex justify-between font-bold text-lg border-t border-gray-200 dark:border-gray-700 pt-2"><span>Total</span><span id="co-total" class="text-primary">R0.00</span></div>
+      </div>
+      <div class="flex gap-3">
+        <button type="button" class="checkout-back w-1/3 px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-full font-semibold hover:border-primary transition-all" data-step="3">Back</button>
+        <button id="place-order-btn" class="flex-1 px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all flex items-center justify-center gap-2"><i class="fas fa-check-circle"></i> Place Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="order-confirm-modal" class="fixed inset-0 bg-black/50 z-[70] hidden items-center justify-center p-4">
+  <div class="bg-cream dark:bg-darkbrown rounded-2xl w-full max-w-md p-8 text-center shadow-2xl">
+    <div class="w-20 h-20 rounded-full bg-green-500 flex items-center justify-center mx-auto mb-4 animate-bounce-custom"><i class="fas fa-check text-white text-3xl"></i></div>
+    <h3 class="font-serif text-2xl font-bold text-darkbrown dark:text-cream mb-2">Order Placed!</h3>
+    <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Thank you for your order. We'll start preparing it right away.</p>
+    <div class="glass-card rounded-xl p-4 mb-4 text-left text-sm space-y-1">
+      <p><strong>Order #:</strong> <span id="order-number" class="text-primary font-bold"></span></p>
+      <p><strong>Estimated Delivery:</strong> 45-60 minutes</p>
+      <p><strong>Total Paid:</strong> <span id="order-total-confirm" class="font-bold"></span></p>
+    </div>
+    <button id="order-confirm-close" class="px-8 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all">Continue</button>
+  </div>
+</div>
+
+<div id="res-confirm-modal" class="fixed inset-0 bg-black/50 z-[70] hidden items-center justify-center p-4">
+  <div class="bg-cream dark:bg-darkbrown rounded-2xl w-full max-w-md p-8 text-center shadow-2xl">
+    <div class="w-20 h-20 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4 animate-bounce-custom"><i class="fas fa-calendar-check text-white text-3xl"></i></div>
+    <h3 class="font-serif text-2xl font-bold text-darkbrown dark:text-cream mb-2">Reservation Confirmed!</h3>
+    <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">We look forward to welcoming you.</p>
+    <div class="glass-card rounded-xl p-4 mb-4 text-left text-sm space-y-1">
+      <p><strong>Reservation #:</strong> <span id="res-number" class="text-primary font-bold"></span></p>
+      <p><strong>Date:</strong> <span id="res-date-confirm"></span></p>
+      <p><strong>Time:</strong> <span id="res-time-confirm"></span></p>
+      <p><strong>Guests:</strong> <span id="res-guests-confirm"></span></p>
+      <p><strong>Name:</strong> <span id="res-name-confirm"></span></p>
+    </div>
+    <div class="flex gap-3 justify-center">
+      <button id="res-add-calendar" class="px-4 py-2.5 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all text-sm"><i class="fas fa-calendar-plus"></i> Add to Calendar</button>
+      <button id="res-confirm-close" class="px-6 py-2.5 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all">Done</button>
+    </div>
+  </div>
+</div>
+
+<div id="review-modal" class="fixed inset-0 bg-black/50 z-[60] hidden items-center justify-center p-4">
+  <div class="bg-cream dark:bg-darkbrown rounded-2xl w-full max-w-md p-6 shadow-2xl">
+    <div class="flex items-center justify-between mb-4">
+      <h3 class="font-serif text-xl font-bold">Write a Review</h3>
+      <button id="review-modal-close" class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"><i class="fas fa-times text-xl"></i></button>
+    </div>
+    <form id="review-form" class="space-y-4">
+      <div class="floating-group"><input type="text" id="rev-name" required /><label for="rev-name">Your Name</label></div>
+      <div class="floating-group"><input type="text" id="rev-location" /><label for="rev-location">Location (optional)</label></div>
+      <div>
+        <label class="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">Rating</label>
+        <div id="star-rating" class="flex gap-1 text-2xl">
+          <i class="far fa-star cursor-pointer hover:text-accent transition-colors" data-star="1"></i>
+          <i class="far fa-star cursor-pointer hover:text-accent transition-colors" data-star="2"></i>
+          <i class="far fa-star cursor-pointer hover:text-accent transition-colors" data-star="3"></i>
+          <i class="far fa-star cursor-pointer hover:text-accent transition-colors" data-star="4"></i>
+          <i class="far fa-star cursor-pointer hover:text-accent transition-colors" data-star="5"></i>
+        </div>
+      </div>
+      <div class="floating-group"><textarea id="rev-text" required maxlength="500"></textarea><label for="rev-text">Your Review</label><span class="text-xs text-gray-400 absolute right-3 bottom-3" id="rev-char-count">500</span></div>
+      <button type="submit" class="w-full px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all">Submit Review</button>
+    </form>
+  </div>
+</div>
+
+<div id="toast" class="toast fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-darkbrown dark:bg-cream text-cream dark:text-darkbrown px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 text-sm font-medium">
+  <i id="toast-icon" class="fas fa-check-circle text-green-400 dark:text-green-600"></i>
+  <span id="toast-message">Item added to cart!</span>
+</div>
+
+<div id="lightbox" class="lightbox fixed inset-0 bg-black/90 z-[80] flex items-center justify-center p-4">
+  <button id="lightbox-close" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/40 transition-colors z-10"><i class="fas fa-times text-xl"></i></button>
+  <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/40 transition-colors z-10"><i class="fas fa-chevron-left"></i></button>
+  <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-white/40 transition-colors z-10"><i class="fas fa-chevron-right"></i></button>
+  <div id="lightbox-content" class="max-w-4xl max-h-[80vh] overflow-hidden rounded-2xl">
+    <div class="w-96 h-64 bg-gray-700 animate-pulse rounded-2xl flex items-center justify-center text-white/50"><i class="fas fa-image text-4xl"></i></div>
+  </div>
+</div>
+<script>
+  const menuItems = [
+    { id: 1, name: 'Makhaya Chicken', nameSi: 'Makhaya Chicken', category: 'Main Courses', price: 85, desc: 'Free-range organic chicken, slow-cooked in traditional spices', diet: ['Gluten-Free'], img: 'chicken' },
+    { id: 2, name: 'Sinkhwa Sembila', nameSi: 'Sinkhwa Sembila', category: 'Main Courses', price: 45, desc: 'Traditional fermented corn bread, served with butter and chakalaka', diet: ['Vegetarian', 'Vegan'], img: 'bread' },
+    { id: 3, name: 'Umbhidvo Wetintsanga', nameSi: 'Umbhidvo Wetintsanga', category: 'Main Courses', price: 55, desc: 'Wild pumpkin leaves cooked with peanut butter and onions', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'pumpkin' },
+    { id: 4, name: 'Inyama Yenkhomo', nameSi: 'Inyama Yenkhomo', category: 'Main Courses', price: 95, desc: 'Grass-fed beef stew with root vegetables', diet: ['Gluten-Free'], img: 'beef' },
+    { id: 5, name: 'Tinkhobe', nameSi: 'Tinkhobe', category: 'Main Courses', price: 30, desc: 'Boiled whole corn on the cob with salt and chili', diet: ['Vegetarian', 'Vegan', 'Gluten-Free', 'Spicy'], img: 'corn' },
+    { id: 6, name: 'Siphuphe Setindlubu', nameSi: 'Siphuphe Setindlubu', category: 'Main Courses', price: 40, desc: 'Peanut butter and sorghum porridge', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'porridge' },
+    { id: 7, name: 'Umfino', nameSi: 'Umfino', category: 'Main Courses', price: 50, desc: 'Mixed wild greens with mealie meal', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'greens' },
+    { id: 8, name: 'Umbila', nameSi: 'Umbila', category: 'Main Courses', price: 35, desc: 'Traditional grilled corn with peri-peri butter', diet: ['Vegetarian', 'Gluten-Free', 'Spicy'], img: 'grilled-corn' },
+    { id: 9, name: 'Umbhonyo', nameSi: 'Umbhonyo', category: 'Snacks', price: 60, desc: 'Traditional dried meat snack, spiced and air-dried', diet: ['Gluten-Free'], img: 'biltong' },
+    { id: 10, name: 'Emagwinya', nameSi: 'Emagwinya', category: 'Snacks', price: 25, desc: 'Fried dough bread, served with mince filling', diet: [], img: 'vetkoek' },
+    { id: 11, name: 'Amahewu Bites', nameSi: 'Amahewu Bites', category: 'Snacks', price: 20, desc: 'Frozen mahewu popsicles with ginger', diet: ['Vegetarian', 'Vegan'], img: 'popsicle' },
+    { id: 12, name: 'Mahewu (Plain)', nameSi: 'Mahewu', category: 'Drinks', price: 25, desc: 'Traditional fermented non-alcoholic drink - Plain', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'mahewu' },
+    { id: 13, name: 'Mahewu (Ginger)', nameSi: 'Mahewu', category: 'Drinks', price: 25, desc: 'Traditional fermented non-alcoholic drink - Ginger', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'mahewu' },
+    { id: 14, name: 'Mahewu (Cinnamon)', nameSi: 'Mahewu', category: 'Drinks', price: 25, desc: 'Traditional fermented non-alcoholic drink - Cinnamon', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'mahewu' },
+    { id: 15, name: 'Umgombothi', nameSi: 'Umgombothi', category: 'Drinks', price: 30, desc: 'Traditional sorghum beer (non-alcoholic available)', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'beer' },
+    { id: 16, name: 'Icuba', nameSi: 'Icuba', category: 'Drinks', price: 20, desc: 'Traditional herbal tea blend', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'tea' },
+    { id: 17, name: 'Fresh Jungle Juice', nameSi: 'Jungle Juice', category: 'Drinks', price: 35, desc: 'Seasonal wild fruit blend', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'juice' },
+    { id: 18, name: 'Umdoni', nameSi: 'Umdoni', category: 'Desserts', price: 40, desc: 'Sweet potato and cinnamon pudding', diet: ['Vegetarian', 'Gluten-Free'], img: 'pudding' },
+    { id: 19, name: 'Tindluva', nameSi: 'Tindluva', category: 'Desserts', price: 25, desc: 'Traditional peanut and honey balls', diet: ['Vegetarian', 'Vegan', 'Gluten-Free'], img: 'balls' },
+    { id: 20, name: 'Khaya Family Feast', nameSi: 'Khaya Family Feast', category: 'Combo Meals', price: 200, desc: 'Makhaya Chicken, Sinkhwa Sembila, Umbhidvo Wetintsanga, Mahewu (serves 2-3)', diet: [], img: 'feast' },
+    { id: 21, name: 'Snack Platter', nameSi: 'Snack Platter', category: 'Combo Meals', price: 85, desc: 'Umbhonyo, Emagwinya, Amahewu Bites', diet: [], img: 'platter' },
+  ];
+
+  const testimonials = [
+    { id: 1, name: 'Nomsa Dlamini', location: 'Mbabane, Eswatini', rating: 5, text: "The Makhaya Chicken took me back to my grandmother's kitchen. Absolutely authentic and delicious! The organic ingredients really shine through.", avatar: 'ND', date: '2 weeks ago' },
+    { id: 2, name: 'James Khumalo', location: 'Johannesburg, SA', rating: 5, text: 'I never knew traditional Swati food could be this refined. The Khaya Family Feast was more than enough for three people. Incredible value!', avatar: 'JK', date: '1 month ago' },
+    { id: 3, name: 'Thandi Mamba', location: 'Manzini, Eswatini', rating: 5, text: "Kudla Kwasekhaya is a gem. Their Sinkhwa Sembila with chakalaka is the best I've had outside my mother's kitchen. So proud of this place!", avatar: 'TM', date: '3 weeks ago' },
+    { id: 4, name: 'Sarah Williams', location: 'London, UK', rating: 5, text: 'Visited Eswatini and stumbled upon this beautiful restaurant. The Umbhidvo Wetintsanga is life-changing! The team was so welcoming.', avatar: 'SW', date: '1 week ago' },
+    { id: 5, name: 'Bheki Simelane', location: 'Malkerns, Eswatini', rating: 5, text: 'As a local, I can confidently say this is the best traditional food in the valley. Fresh, organic, and made with genuine love. Highly recommend!', avatar: 'BS', date: '2 days ago' },
+    { id: 6, name: 'Lindiwe Nkosi', location: 'Durban, SA', rating: 5, text: 'The Umgombothi here is perfection. And paired with Inyama Yenkhomo? Heaven. This is Swati food at its finest. Will definitely order again!', avatar: 'LN', date: '5 days ago' },
+  ];
+
+  const galleryItems = [
+    { id: 1, cat: 'Food', label: 'Makhaya Chicken' }, { id: 2, cat: 'Food', label: 'Sinkhwa Sembila' },
+    { id: 3, cat: 'Food', label: 'Inyama Yenkhomo' }, { id: 4, cat: 'Food', label: 'Khaya Family Feast' },
+    { id: 5, cat: 'Interior', label: 'Dining Area' }, { id: 6, cat: 'Interior', label: 'Bar & Seating' },
+    { id: 7, cat: 'Interior', label: 'Outdoor Patio' }, { id: 8, cat: 'Interior', label: 'Traditional Decor' },
+    { id: 9, cat: 'Family', label: 'Family Dinner' }, { id: 10, cat: 'Family', label: "Chef's Table" },
+    { id: 11, cat: 'Events', label: 'Cultural Night' }, { id: 12, cat: 'Events', label: 'Cooking Workshop' },
+    { id: 13, cat: 'Events', label: 'Harvest Celebration' }, { id: 14, cat: 'Food', label: 'Tindluva Dessert' },
+    { id: 15, cat: 'Food', label: 'Fresh Mahewu' },
+  ];
+
+  const blogPosts = [
+    { id: 1, cat: 'Culture', title: 'The Art of Preparing Sinkhwa Sembila', excerpt: 'Discover the traditional method of making fermented corn bread, a staple of Swati cuisine passed down through generations.', author: 'Gogo Makhanya', date: 'Jun 15, 2026' },
+    { id: 2, cat: 'Health', title: 'Why Organic Traditional Food is Better for You', excerpt: 'We explore the health benefits of eating organic, farm-to-table traditional Swati food and how it nourishes both body and soul.', author: 'Chef Thabiso', date: 'Jun 10, 2026' },
+    { id: 3, cat: 'Recipes', title: 'How to Make Perfect Emagwinya at Home', excerpt: 'Our chef shares the secret to light, fluffy Emagwinya - the beloved Swati fried dough bread that pairs perfectly with any stew.', author: 'Chef Thabiso', date: 'Jun 5, 2026' },
+    { id: 4, cat: 'Events', title: 'Join Us for Our Annual Harvest Festival', excerpt: 'Celebrate the bounty of Eswatini with live music, traditional dancing, and a feast featuring our seasonal specials.', author: 'Events Team', date: 'May 28, 2026' },
+  ];
+
+  // Unsplash direct photo URL builder (specific photo IDs, no search-based URLs)
+  const P = function(id, w, h) { return 'https://images.unsplash.com/photo-' + id + '?w=' + (w||400) + '&h=' + (h||300) + '&fit=crop'; };
+  const GALLERY_COLORS = ['#D4693B','#2D5A27','#F4A236','#2C1810','#8B4513','#556B2F','#CD853F','#6B3A2A','#A0522D','#3C6E47','#B8860B','#5C4033','#8F7A55','#C4743D','#4A6741'];
+  const GALLERY_ICONS = ['fa-drumstick-bite','fa-bread-slice','fa-bowl-food','fa-utensils','fa-chair','fa-wine-glass','fa-tree','fa-paintbrush','fa-people-group','fa-hat-chef','fa-masks-theater','fa-fire','fa-wheat-awn','fa-candy-cane','fa-mug-saucer'];
+  const BLOG_ICONS = { Culture:'fa-book-open', Health:'fa-heart-pulse', Recipes:'fa-book', Events:'fa-calendar' };
+  // Specific Unsplash photo IDs mapped to each menu item type
+  const MENU_IMG = {
+    chicken:P('1504674900247-0877df9cc836',400,300), bread:P('1509440159596-0249088772ff',400,300), pumpkin:P('1546069901-ba9599a7e63c',400,300),
+    beef:P('1555939594-58d7cb561ad1',400,300), corn:P('1551754655-cd27e38d2076',400,300), porridge:P('1547592166-23ac45744acd',400,300),
+    greens:P('1546069901-ba9599a7e63c',400,300), 'grilled-corn':P('1551754655-cd27e38d2076',400,300), biltong:P('1555939594-58d7cb561ad1',400,300),
+    vetkoek:P('1509440159596-0249088772ff',400,300), popsicle:P('1551024601-bec78aea704b',400,300), mahewu:P('1544145945-f1f0f3e5b1d1',400,300),
+    beer:P('1535958636474-b021ee887b13',400,300), tea:P('1556679343-c7306c1976bc',400,300), juice:P('1544145945-f1f0f3e5b1d1',400,300),
+    pudding:P('1551024601-bec78aea704b',400,300), balls:P('1551024601-bec78aea704b',400,300), feast:P('1504674900247-0877df9cc836',400,300),
+    platter:P('1504674900247-0877df9cc836',400,300)
+  };
+  // Specific Unsplash photo IDs for gallery items (indexed by gallery item id)
+  const GALLERY_PHOTOS = [
+    '1504674900247-0877df9cc836','1509440159596-0249088772ff','1555939594-58d7cb561ad1','1504674900247-0877df9cc836',
+    '1555396273-367ea4eb4db5','1414235077428-338989a2e8c0','1517245386807-bb43f82c33c4','1555396273-367ea4eb4db5',
+    '1470071459604-3b5ec3a7fe05','1581595219315-a187b4c322a1','1500382014548-ee71cd35e3d9','1544025162-d76694265947',
+    '1501785888046-af154c6a76f9','1551024601-bec78aea704b','1544145945-f1f0f3e5b1d1'
+  ];
+  // Specific Unsplash photo IDs for blog posts (indexed by blog post id - 1)
+  const BLOG_PHOTOS = ['1581595219315-a187b4c322a1','1544025162-d76694265947','1509440159596-0249088772ff','1414235077428-338989a2e8c0'];
+  // Specific Unsplash face photo IDs for testimonial avatars
+  const AVATAR_PHOTOS = ['1494790108377-be9c29b29330','1507003211169-0a1dd7228f2d','1438761681033-6461ffad8d80','1472099645785-5658abf4ff4e','1534528741775-53994a69daeb','1500648767791-00dcc994a43e'];
+
+  let cart = JSON.parse(localStorage.getItem('kudlaCart')) || [];
+  let orders = JSON.parse(localStorage.getItem('kudlaOrders')) || [];
+  let reservations = JSON.parse(localStorage.getItem('kudlaReservations')) || [];
+  let darkMode = localStorage.getItem('kudlaDarkMode') === 'true';
+  let activeCategory = 'all';
+  let activeDiet = 'all';
+  let searchQuery = '';
+  let currentTestimonial = 0;
+  let testimonialInterval;
+  let currentLightboxIndex = 0;
+  let currentGalleryFilter = 'all';
+  let guestCount = 2;
+  let reviewRating = 5;
+
+  const $ = (s, p) => (p||document).querySelector(s);
+  const $$ = (s, p) => [...(p||document).querySelectorAll(s)];
+  function renderMenu() {
+    const grid = document.getElementById('menu-grid');
+    const noResults = document.getElementById('no-results');
+    let items = [...menuItems];
+    if (activeCategory !== 'all') items = items.filter(i => i.category === activeCategory);
+    if (activeDiet !== 'all') items = items.filter(i => i.diet.includes(activeDiet));
+    if (searchQuery) { const q = searchQuery.toLowerCase(); items = items.filter(i => i.name.toLowerCase().includes(q) || i.nameSi.toLowerCase().includes(q) || i.desc.toLowerCase().includes(q)); }
+    if (items.length === 0) { grid.innerHTML = ''; noResults.classList.remove('hidden'); document.getElementById('menu-count').textContent = '(0)'; return; }
+    noResults.classList.add('hidden');
+    document.getElementById('menu-count').textContent = `(${items.length})`;
+    grid.innerHTML = items.map((item, idx) => {
+      const imgUrl = MENU_IMG[item.img] || P('1504674900247-0877df9cc836', 400, 300);
+      return `<div class="menu-card glass-card rounded-2xl overflow-hidden reveal" style="transition-delay:${idx * 0.05}s">
+        <div class="img-zoom h-44 bg-gradient-to-br from-primary/10 to-secondary/10 relative">
+          <img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <span class="absolute top-3 right-3 bg-white/90 dark:bg-darkbrown/90 text-xs font-bold px-2 py-1 rounded-full shadow">R${item.price}</span>
+          ${item.diet.length ? `<div class="absolute top-3 left-3 flex gap-1">${item.diet.map(d => `<span class="text-[10px] bg-white/80 dark:bg-darkbrown/80 px-1.5 py-0.5 rounded-full">${d === 'Vegetarian' ? '🌱' : d === 'Vegan' ? '🌿' : d === 'Gluten-Free' ? '🌾' : '🌶️'}</span>`).join('')}</div>` : ''}
+        </div>
+        <div class="p-4">
+          <h4 class="font-serif font-bold text-lg text-darkbrown dark:text-cream">${item.name}</h4>
+          <p class="text-xs text-primary italic mb-1">${item.nameSi}</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 mb-3">${item.desc}</p>
+          <button data-id="${item.id}" class="w-full px-4 py-2 gradient-bg text-white text-sm rounded-full font-medium hover:shadow-lg transition-all flex items-center justify-center gap-2 add-to-cart-btn"><i class="fas fa-plus"></i> Add to Order</button>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function renderTestimonials() {
+    const track = document.getElementById('testimonial-track');
+    track.innerHTML = testimonials.map(t => `<div class="min-w-full p-8 md:p-12 text-center" data-id="${t.id}">
+      <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">${t.avatar}</div>
+      <div class="flex justify-center gap-1 mb-4 text-accent">${'<i class="fas fa-star"></i>'.repeat(t.rating)}</div>
+      <p class="text-gray-600 dark:text-gray-400 text-lg italic leading-relaxed max-w-2xl mx-auto mb-4">"${t.text}"</p>
+      <p class="font-semibold text-darkbrown dark:text-cream">${t.name}</p>
+      <p class="text-sm text-gray-400">${t.location} &middot; ${t.date}</p>
+    </div>`).join('');
+    updateTestimonialDots();
+  }
+
+  function updateTestimonialDots() {
+    const dots = document.getElementById('test-dots');
+    dots.innerHTML = testimonials.map((_, i) => `<button class="w-2.5 h-2.5 rounded-full transition-all ${i === currentTestimonial ? 'bg-primary w-6' : 'bg-gray-300 dark:bg-gray-600'}" data-index="${i}" aria-label="Go to testimonial ${i+1}"></button>`).join('');
+    const track = document.getElementById('testimonial-track');
+    track.style.transform = 'translateX(-' + (currentTestimonial * 100) + '%)';
+  }
+
+  function renderGallery() {
+    const grid = document.getElementById('gallery-grid');
+    const items = currentGalleryFilter === 'all' ? galleryItems : galleryItems.filter(g => g.cat === currentGalleryFilter);
+    grid.innerHTML = items.map(item => {
+      const gIdx = galleryItems.indexOf(item);
+      const imgUrl = P(GALLERY_PHOTOS[item.id % GALLERY_PHOTOS.length], 400, 400);
+      return `<div class="relative rounded-xl overflow-hidden cursor-pointer group img-zoom gallery-item" data-index="${gIdx}">
+        <div class="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10">
+          <img src="${imgUrl}" alt="${item.label}" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+          <p class="text-white font-semibold text-sm">${item.label}</p>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function renderBlog() {
+    const grid = document.getElementById('blog-grid');
+    grid.innerHTML = blogPosts.map(post => `<div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+      <div class="h-44 bg-gradient-to-br from-primary/10 to-secondary/10 relative">
+        <img src="${P(BLOG_PHOTOS[post.id - 1], 400, 300)}" alt="${post.title}" class="w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+        <span class="absolute top-3 left-3 text-xs font-medium px-2 py-1 rounded-full bg-white/90 dark:bg-darkbrown/90 text-darkbrown dark:text-cream shadow">${post.cat}</span>
+      </div>
+      <div class="p-5">
+        <h4 class="font-serif font-bold text-lg text-darkbrown dark:text-cream mb-2 line-clamp-2">${post.title}</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3 line-clamp-3">${post.excerpt}</p>
+        <div class="flex items-center justify-between text-xs text-gray-400"><span><i class="fas fa-user mr-1"></i>${post.author}</span><span>${post.date}</span></div>
+      </div>
+    </div>`).join('');
+  }
+
+  function renderCartSidebar() {
+    const container = document.getElementById('cart-items');
+    const footer = document.getElementById('cart-footer');
+    const badge = document.getElementById('cart-badge');
+    if (cart.length === 0) {
+      container.innerHTML = '<div class="text-center py-12 text-gray-400"><i class="fas fa-shopping-bag text-5xl mb-3"></i><p>Your cart is empty</p><p class="text-sm">Browse our menu and add items you would like to order.</p></div>';
+      footer.classList.add('hidden');
+      badge.classList.add('hidden');
+      document.getElementById('cart-summary-text').classList.remove('hidden');
+      document.getElementById('cart-summary-details').classList.add('hidden');
+      document.getElementById('checkout-btn').disabled = true;
+      return;
+    }
+    badge.classList.remove('hidden');
+    badge.textContent = cart.reduce((s, i) => s + i.qty, 0);
+    badge.classList.remove('animate-bounce-custom');
+    void badge.offsetWidth;
+    badge.classList.add('animate-bounce-custom');
+    container.innerHTML = cart.map((item, idx) => {
+      const imgUrl = MENU_IMG[item.img] || U('food', 100, 100);
+      return `<div class="glass-card rounded-xl p-3 flex items-center gap-3">
+        <div class="w-12 h-12 rounded-lg overflow-hidden shrink-0"><img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-cover" loading="lazy" /></div>
+        <div class="flex-1 min-w-0"><p class="font-semibold text-sm truncate">${item.name}</p><p class="text-xs text-gray-400">R${item.price} each</p></div>
+        <div class="flex items-center gap-2">
+          <button onclick="updateCartQty(${idx}, -1)" class="w-7 h-7 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center text-sm hover:border-primary transition-colors">&minus;</button>
+          <span class="font-bold w-5 text-center text-sm">${item.qty}</span>
+          <button onclick="updateCartQty(${idx}, 1)" class="w-7 h-7 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center text-sm hover:border-primary transition-colors">+</button>
+        </div>
+        <div class="text-right shrink-0"><p class="font-semibold text-sm">R${(item.price * item.qty).toFixed(2)}</p><button onclick="removeFromCart(${idx})" class="text-xs text-red-400 hover:text-red-600 transition-colors"><i class="fas fa-trash"></i></button></div>
+      </div>`;
+    }).join('');
+    footer.classList.remove('hidden');
+    updateCartTotals();
+    document.getElementById('checkout-btn').disabled = false;
+    document.getElementById('cart-summary-text').classList.add('hidden');
+    document.getElementById('cart-summary-details').classList.remove('hidden');
+    updateCartSummary();
+  }
+
+  function calcCart() {
+    const subtotal = cart.reduce((s, i) => s + i.price * i.qty, 0);
+    const vat = subtotal * 0.15;
+    const delivery = subtotal > 0 ? 30 : 0;
+    const total = subtotal + vat + delivery;
+    return { subtotal, vat, delivery, total };
+  }
+
+  function updateCartTotals() {
+    const { subtotal, vat, delivery, total } = calcCart();
+    document.getElementById('sidebar-subtotal').textContent = 'R' + subtotal.toFixed(2);
+    document.getElementById('sidebar-vat').textContent = 'R' + vat.toFixed(2);
+    document.getElementById('sidebar-delivery').textContent = delivery ? 'R30.00' : 'R0.00';
+    document.getElementById('sidebar-total').textContent = 'R' + total.toFixed(2);
+  }
+
+  function updateCartSummary() {
+    const { subtotal, vat, delivery, total } = calcCart();
+    document.getElementById('cart-subtotal').textContent = 'R' + subtotal.toFixed(2);
+    document.getElementById('cart-vat').textContent = 'R' + vat.toFixed(2);
+    document.getElementById('cart-delivery').textContent = delivery ? 'R30.00' : 'R0.00';
+    document.getElementById('cart-total').textContent = 'R' + total.toFixed(2);
+  }
+
+  function saveCart() { localStorage.setItem('kudlaCart', JSON.stringify(cart)); renderCartSidebar(); }
+  function addToCart(id) {
+    const item = menuItems.find(i => i.id === id);
+    if (!item) return;
+    const existing = cart.find(i => i.id === id);
+    if (existing) { existing.qty += 1; }
+    else { cart.push({ ...item, qty: 1 }); }
+    saveCart();
+    showToast(item.name + ' added to cart!', 'fa-plus-circle');
+  }
+
+  function updateCartQty(idx, delta) {
+    if (idx < 0 || idx >= cart.length) return;
+    cart[idx].qty += delta;
+    if (cart[idx].qty <= 0) cart.splice(idx, 1);
+    saveCart();
+  }
+
+  function removeFromCart(idx) {
+    if (idx < 0 || idx >= cart.length) return;
+    const name = cart[idx].name;
+    cart.splice(idx, 1);
+    saveCart();
+    showToast(name + ' removed from cart', 'fa-trash');
+  }
+
+  function clearCart() { cart = []; saveCart(); }
+
+  let toastTimeout;
+  function showToast(message, icon) {
+    icon = icon || 'fa-check-circle';
+    const toast = document.getElementById('toast');
+    document.getElementById('toast-message').textContent = message;
+    document.getElementById('toast-icon').className = 'fas ' + icon + ' text-green-400 dark:text-green-600';
+    toast.classList.add('active');
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(function() { toast.classList.remove('active'); }, 3000);
+  }
+
+  function generateOrderNumber() { return 'KUD-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 9000); }
+  function generateReservationNumber() { return 'RES-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 9000); }
+
+  function openCart() {
+    document.getElementById('cart-overlay').classList.add('active');
+    document.getElementById('cart-sidebar').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCart() {
+    document.getElementById('cart-overlay').classList.remove('active');
+    document.getElementById('cart-sidebar').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function openCheckout() {
+    closeCart();
+    document.getElementById('checkout-modal').classList.remove('hidden');
+    document.getElementById('checkout-modal').classList.add('flex');
+    document.body.style.overflow = 'hidden';
+    showCheckoutStep(1);
+    updateCheckoutSummary();
+  }
+
+  function showCheckoutStep(step) {
+    for (let i = 1; i <= 3; i++) {
+      const el = document.getElementById('checkout-step-' + i);
+      if (el) el.classList.toggle('hidden', i !== step);
+    }
+    $$('.step-indicator').forEach(function(el, i) {
+      const num = i + 1;
+      el.className = 'step-indicator w-8 h-8 rounded-full flex items-center justify-center font-bold text-white text-xs ' + (num <= step ? 'gradient-bg' : 'bg-gray-300 dark:bg-gray-600');
+    });
+  }
+
+  function updateCheckoutSummary() {
+    const { subtotal, vat, delivery, total } = calcCart();
+    const container = document.getElementById('co-summary-items');
+    container.innerHTML = cart.map(item => '<div class="flex justify-between text-sm"><span>' + item.name + ' x' + item.qty + '</span><span>R' + (item.price * item.qty).toFixed(2) + '</span></div>').join('');
+    document.getElementById('co-subtotal').textContent = 'R' + subtotal.toFixed(2);
+    document.getElementById('co-vat').textContent = 'R' + vat.toFixed(2);
+    document.getElementById('co-delivery').textContent = delivery ? 'R30.00' : 'R0.00';
+    document.getElementById('co-total').textContent = 'R' + total.toFixed(2);
+  }
+
+  function placeOrder() {
+    const name = document.getElementById('co-name').value.trim();
+    const phone = document.getElementById('co-phone').value.trim();
+    const email = document.getElementById('co-email').value.trim();
+    const address = document.getElementById('co-address').value.trim();
+    const city = document.getElementById('co-city').value.trim();
+    const zip = document.getElementById('co-zip').value.trim();
+    if (!name || !phone || !email || !address || !city || !zip) { showToast('Please fill in all required fields', 'fa-exclamation-circle'); return; }
+    if (!/^[\+]?[\d\s\-\(\)]{7,20}$/.test(phone)) { showToast('Please enter a valid phone number', 'fa-exclamation-circle'); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showToast('Please enter a valid email address', 'fa-exclamation-circle'); return; }
+
+    const { subtotal, vat, delivery, total } = calcCart();
+    const orderNum = generateOrderNumber();
+    const order = { number: orderNum, items: JSON.parse(JSON.stringify(cart)), subtotal, vat, delivery, total, name, phone, email, address, city, zip, notes: document.getElementById('co-notes').value.trim(), date: new Date().toISOString(), estimatedDelivery: '45-60 minutes' };
+    orders.push(order);
+    localStorage.setItem('kudlaOrders', JSON.stringify(orders));
+    console.log('Order placed:', order);
+    console.log('Email confirmation sent to:', email, '(Order #' + orderNum + ')');
+    clearCart();
+    document.getElementById('checkout-modal').classList.add('hidden');
+    document.getElementById('order-number').textContent = orderNum;
+    document.getElementById('order-total-confirm').textContent = 'R' + total.toFixed(2);
+    document.getElementById('order-confirm-modal').classList.remove('hidden');
+    document.getElementById('order-confirm-modal').classList.add('flex');
+    launchConfetti();
+  }
+
+  function launchConfetti() {
+    const canvas = document.getElementById('confetti-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const colors = ['#D4693B','#2D5A27','#F4A236','#e04a2f','#FFD700','#FF6B6B','#48D1CC','#FF69B4'];
+    const particles = Array.from({ length: 150 }, function() { return {
+      x: Math.random() * canvas.width, y: Math.random() * canvas.height - canvas.height,
+      w: Math.random() * 10 + 5, h: Math.random() * 6 + 3,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      vx: (Math.random() - 0.5) * 2, vy: Math.random() * 3 + 2,
+      rot: Math.random() * 360, rotSpeed: (Math.random() - 0.5) * 10 }; });
+    let frame = 0;
+    const maxFrames = 200;
+    function animate() {
+      if (frame >= maxFrames) { ctx.clearRect(0, 0, canvas.width, canvas.height); return; }
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(function(p) {
+        p.x += p.vx; p.y += p.vy; p.vy += 0.05; p.rot += p.rotSpeed;
+        ctx.save(); ctx.translate(p.x, p.y); ctx.rotate((p.rot * Math.PI) / 180);
+        ctx.fillStyle = p.color; ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h); ctx.restore();
+      });
+      frame++; requestAnimationFrame(animate);
+    }
+    animate();
+  }
+
+  function submitReservation(e) {
+    e.preventDefault();
+    const name = document.getElementById('res-name').value.trim();
+    const phone = document.getElementById('res-phone').value.trim();
+    const email = document.getElementById('res-email').value.trim();
+    const date = document.getElementById('res-date').value;
+    const time = document.getElementById('res-time').value;
+    const occasion = document.getElementById('res-occasion').value;
+    const requests = document.getElementById('res-requests').value.trim();
+    if (!name || !phone || !email || !date || !time) { showToast('Please fill in all required fields', 'fa-exclamation-circle'); return; }
+    if (!/^[\+]?[\d\s\-\(\)]{7,20}$/.test(phone)) { showToast('Please enter a valid phone number', 'fa-exclamation-circle'); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showToast('Please enter a valid email address', 'fa-exclamation-circle'); return; }
+    if (Math.random() > 0.8) { showToast('Sorry, this time slot is unavailable. Please choose another.', 'fa-exclamation-circle'); return; }
+    const resNum = generateReservationNumber();
+    const reservation = { number: resNum, name, phone, email, date, time, guests: guestCount, occasion: occasion || 'Not specified', requests, createdAt: new Date().toISOString() };
+    reservations.push(reservation);
+    localStorage.setItem('kudlaReservations', JSON.stringify(reservations));
+    console.log('Reservation made:', reservation);
+    console.log('Email confirmation sent to:', email, '(Reservation #' + resNum + ')');
+    document.getElementById('res-number').textContent = resNum;
+    document.getElementById('res-date-confirm').textContent = new Date(date).toLocaleDateString('en-ZA', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    document.getElementById('res-time-confirm').textContent = time;
+    document.getElementById('res-guests-confirm').textContent = guestCount;
+    document.getElementById('res-name-confirm').textContent = name;
+    const d = date.replace(/-/g, '');
+    const h = time.includes('PM') ? String(parseInt(time) + 12) : String(parseInt(time)).padStart(2, '0');
+    const calUrl = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Reservation+at+Kudla+Kwasekhaya&details=Reservation+%23' + resNum + '+for+' + guestCount + '+guests&dates=' + d + 'T' + h + '0000/' + d + 'T' + String(parseInt(h) + 1) + '0000&location=Plot+45,+Malkerns+Valley,+Eswatini';
+    document.getElementById('res-add-calendar').onclick = function() { window.open(calUrl, '_blank'); };
+    document.getElementById('reservation-form').reset();
+    guestCount = 2;
+    document.getElementById('guest-count').textContent = '2';
+    document.getElementById('res-confirm-modal').classList.remove('hidden');
+    document.getElementById('res-confirm-modal').classList.add('flex');
+  }
+
+  function setupReservationTimes() {
+    const select = document.getElementById('res-time');
+    const times = [];
+    for (let h = 11; h <= 21; h++) {
+      const ampm = h < 12 ? 'AM' : 'PM';
+      const dh = h <= 12 ? h : h - 12;
+      times.push(dh + ':00 ' + ampm);
+      if (h !== 21) times.push(dh + ':30 ' + ampm);
+    }
+    select.innerHTML = '<option value="" disabled selected></option>' + times.map(t => '<option value="' + t + '">' + t + '</option>').join('');
+    document.getElementById('res-date').min = new Date().toISOString().split('T')[0];
+  }
+  function init() {
+    if (darkMode) document.documentElement.classList.add('dark');
+    renderMenu();
+    renderTestimonials();
+    renderGallery();
+    renderBlog();
+    renderCartSidebar();
+    setupReservationTimes();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('res-date').value = today;
+
+    // Floating labels
+    $$('.floating-group input, .floating-group textarea, .floating-group select').forEach(function(el) {
+      el.addEventListener('input', function() { this.closest('.floating-group').classList.toggle('filled', !!this.value); });
+      if (el.value) el.closest('.floating-group').classList.add('filled');
+    });
+
+    // Guest stepper
+    $$('.guest-stepper').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        if (this.dataset.action === 'plus' && guestCount < 20) guestCount++;
+        if (this.dataset.action === 'minus' && guestCount > 1) guestCount--;
+        document.getElementById('guest-count').textContent = guestCount;
+      });
+    });
+
+    // Character counts
+    document.getElementById('res-requests').addEventListener('input', function() { document.getElementById('char-count').textContent = 300 - this.value.length; });
+    document.getElementById('contact-message').addEventListener('input', function() { document.getElementById('contact-char-count').textContent = 500 - this.value.length; });
+    document.getElementById('rev-text').addEventListener('input', function() { document.getElementById('rev-char-count').textContent = 500 - this.value.length; });
+
+    // Category tabs
+    $$('.cat-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        $$('.cat-tab').forEach(function(t) { t.className = t.className.replace(' pill-active', ''); });
+        this.className += ' pill-active';
+        activeCategory = this.dataset.cat;
+        renderMenu();
+      });
+    });
+
+    // Diet filters
+    $$('.diet-filter').forEach(function(f) {
+      f.addEventListener('click', function() {
+        $$('.diet-filter').forEach(function(d) { d.classList.remove('bg-primary/20', 'border-primary', 'text-primary'); });
+        this.classList.add('bg-primary/20', 'border-primary', 'text-primary');
+        activeDiet = this.dataset.diet;
+        renderMenu();
+      });
+    });
+    const firstDiet = $$('.diet-filter')[0];
+    if (firstDiet) firstDiet.classList.add('bg-primary/20', 'border-primary', 'text-primary');
+
+    // Menu add-to-cart via event delegation (instead of inline onclick)
+    document.getElementById('menu-grid').addEventListener('click', function(e) {
+      const btn = e.target.closest('.add-to-cart-btn');
+      if (!btn) return;
+      const id = parseInt(btn.dataset.id);
+      if (id) addToCart(id);
+    });
+
+    // Debounced search
+    let searchTimeout;
+    document.getElementById('menu-search').addEventListener('input', function() {
+      clearTimeout(searchTimeout);
+      const val = this.value;
+      searchTimeout = setTimeout(function() { searchQuery = val; renderMenu(); }, 300);
+    });
+
+    // Gallery filters
+    $$('.gallery-filter').forEach(function(f) {
+      f.addEventListener('click', function() {
+        $$('.gallery-filter').forEach(function(g) { g.className = g.className.replace(' pill-active', ''); });
+        this.className += ' pill-active';
+        currentGalleryFilter = this.dataset.gcat;
+        renderGallery();
+      });
+    });
+
+    // Lightbox
+    document.getElementById('gallery-grid').addEventListener('click', function(e) {
+      const item = e.target.closest('.gallery-item');
+      if (!item) return;
+      currentLightboxIndex = parseInt(item.dataset.index);
+      openLightbox();
+    });
+
+    function openLightbox() {
+      const item = galleryItems[currentLightboxIndex];
+      const content = document.getElementById('lightbox-content');
+      content.innerHTML = '<div class="w-full aspect-video relative"><img src="' + U(item.cat + ',' + item.label, 1200, 800) + '" alt="' + item.label + '" class="w-full h-full object-cover rounded-2xl" /><p class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg bg-black/40 px-3 py-1 rounded-full">' + item.label + '</p></div>';
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    document.getElementById('lightbox-close').addEventListener('click', function() { document.getElementById('lightbox').classList.remove('active'); document.body.style.overflow = ''; });
+    document.getElementById('lightbox-prev').addEventListener('click', function() { currentLightboxIndex = (currentLightboxIndex - 1 + galleryItems.length) % galleryItems.length; openLightbox(); });
+    document.getElementById('lightbox-next').addEventListener('click', function() { currentLightboxIndex = (currentLightboxIndex + 1) % galleryItems.length; openLightbox(); });
+
+    // Testimonials
+    function nextTestimonial() { currentTestimonial = (currentTestimonial + 1) % testimonials.length; updateTestimonialDots(); }
+    function prevTestimonial() { currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length; updateTestimonialDots(); }
+    function startAuto() { stopAuto(); testimonialInterval = setInterval(nextTestimonial, 5000); }
+    function stopAuto() { clearInterval(testimonialInterval); }
+    document.getElementById('test-next').addEventListener('click', function() { nextTestimonial(); startAuto(); });
+    document.getElementById('test-prev').addEventListener('click', function() { prevTestimonial(); startAuto(); });
+    document.getElementById('test-dots').addEventListener('click', function(e) {
+      const btn = e.target.closest('button'); if (!btn) return;
+      currentTestimonial = parseInt(btn.dataset.index); updateTestimonialDots(); startAuto();
+    });
+    const testTrack = document.getElementById('testimonial-track');
+    testTrack.addEventListener('mouseenter', stopAuto);
+    testTrack.addEventListener('mouseleave', startAuto);
+    startAuto();
+
+    // Progress bar for testimonials
+    setInterval(function() {
+      const prog = document.getElementById('test-progress');
+      if (!prog) return;
+      let w = parseFloat(prog.style.width) || 100;
+      w -= 100 / 200;
+      if (w <= 0) w = 100;
+      prog.style.width = w + '%';
+    }, 100);
+
+    // Hamburger
+    document.getElementById('hamburger').addEventListener('click', function() {
+      document.getElementById('mobile-nav').classList.add('active');
+      document.getElementById('mobile-overlay').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    });
+    document.getElementById('mobile-close').addEventListener('click', closeMobile);
+    document.getElementById('mobile-overlay').addEventListener('click', closeMobile);
+    $$('.mobile-link').forEach(function(l) { l.addEventListener('click', closeMobile); });
+    function closeMobile() {
+      document.getElementById('mobile-nav').classList.remove('active');
+      document.getElementById('mobile-overlay').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Navbar scroll
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('shadow-lg', window.scrollY > 100);
+      const btt = document.getElementById('back-to-top');
+      if (window.scrollY > 500) { btt.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none'); }
+      else { btt.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none'); }
+    });
+
+    // Dark mode
+    document.getElementById('dark-toggle').addEventListener('click', function() {
+      darkMode = !darkMode;
+      document.documentElement.classList.toggle('dark', darkMode);
+      localStorage.setItem('kudlaDarkMode', darkMode);
+    });
+
+    // Cart
+    document.getElementById('cart-btn').addEventListener('click', openCart);
+    document.getElementById('cart-close').addEventListener('click', closeCart);
+    document.getElementById('cart-overlay').addEventListener('click', function(e) { if (e.target === e.currentTarget) closeCart(); });
+    document.getElementById('checkout-btn').addEventListener('click', openCheckout);
+    document.getElementById('sidebar-checkout').addEventListener('click', openCheckout);
+
+    // Checkout navigation
+    $$('.checkout-next').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const step = parseInt(this.dataset.step);
+        if (step === 1) {
+          const n = document.getElementById('co-name').value.trim();
+          const p = document.getElementById('co-phone').value.trim();
+          const e = document.getElementById('co-email').value.trim();
+          if (!n || !p || !e) { showToast('Please fill in all required fields', 'fa-exclamation-circle'); return; }
+          if (!/^[\+]?[\d\s\-\(\)]{7,20}$/.test(p)) { showToast('Please enter a valid phone number', 'fa-exclamation-circle'); return; }
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)) { showToast('Please enter a valid email address', 'fa-exclamation-circle'); return; }
+        }
+        showCheckoutStep(step + 1);
+        if (step + 1 === 3) updateCheckoutSummary();
+      });
+    });
+
+    $$('.checkout-back').forEach(function(btn) {
+      btn.addEventListener('click', function() { showCheckoutStep(parseInt(this.dataset.step) - 1); });
+    });
+
+    // Place order
+    document.getElementById('place-order-btn').addEventListener('click', placeOrder);
+
+    // Close modals
+    document.getElementById('checkout-close').addEventListener('click', function() { document.getElementById('checkout-modal').classList.add('hidden'); document.body.style.overflow = ''; });
+    document.getElementById('order-confirm-close').addEventListener('click', function() { document.getElementById('order-confirm-modal').classList.add('hidden'); document.body.style.overflow = ''; });
+    document.getElementById('res-confirm-close').addEventListener('click', function() { document.getElementById('res-confirm-modal').classList.add('hidden'); document.body.style.overflow = ''; });
+
+    // Reservation form
+    document.getElementById('reservation-form').addEventListener('submit', submitReservation);
+
+    // Review modal
+    document.getElementById('write-review-btn').addEventListener('click', function() {
+      document.getElementById('review-modal').classList.remove('hidden');
+      document.getElementById('review-modal').classList.add('flex');
+    });
+    document.getElementById('review-modal-close').addEventListener('click', function() { document.getElementById('review-modal').classList.add('hidden'); });
+
+    // Star rating
+    $$('#star-rating i').forEach(function(star) {
+      star.addEventListener('click', function() {
+        reviewRating = parseInt(this.dataset.star);
+        $$('#star-rating i').forEach(function(s, i) {
+          s.className = (i < reviewRating ? 'fas' : 'far') + ' fa-star cursor-pointer hover:text-accent transition-colors';
+        });
+      });
+      star.addEventListener('mouseenter', function() {
+        const val = parseInt(this.dataset.star);
+        $$('#star-rating i').forEach(function(s, i) {
+          s.className = (i < val ? 'fas' : 'far') + ' fa-star cursor-pointer hover:text-accent transition-colors';
+        });
+      });
+    });
+
+    // Review form
+    document.getElementById('review-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('rev-name').value.trim();
+      const text = document.getElementById('rev-text').value.trim();
+      if (!name || !text) { showToast('Please fill in all required fields', 'fa-exclamation-circle'); return; }
+      showToast('Thank you for your review!', 'fa-star');
+      document.getElementById('review-modal').classList.add('hidden');
+      this.reset();
+    });
+
+    // Contact form
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value.trim();
+      const email = document.getElementById('contact-email').value.trim();
+      const msg = document.getElementById('contact-message').value.trim();
+      if (!name || !email || !msg) { showToast('Please fill in all required fields', 'fa-exclamation-circle'); return; }
+      showToast('Message sent! We will get back to you soon.', 'fa-paper-plane');
+      this.reset();
+      $$('.floating-group', this).forEach(function(g) { g.classList.remove('filled'); });
+    });
+
+    // Back to top
+    document.getElementById('back-to-top').addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+    // Newsletter
+    document.getElementById('newsletter-btn').addEventListener('click', function() {
+      const email = document.getElementById('newsletter-email').value.trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showToast('Please enter a valid email', 'fa-exclamation-circle'); return; }
+      showToast('Subscribed to newsletter!', 'fa-paper-plane');
+      document.getElementById('newsletter-email').value = '';
+    });
+
+    // Intersection Observer for scroll reveals
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    $$('.reveal').forEach(function(el) { observer.observe(el); });
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
