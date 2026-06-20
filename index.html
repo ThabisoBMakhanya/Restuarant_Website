@@ -923,7 +923,7 @@
     void badge.offsetWidth;
     badge.classList.add('animate-bounce-custom');
     container.innerHTML = cart.map((item, idx) => {
-      const imgUrl = MENU_IMG[item.img] || U('food', 100, 100);
+      const imgUrl = MENU_IMG[item.img] || P('1504674900247-0877df9cc836', 100, 100);
       return `<div class="glass-card rounded-xl p-3 flex items-center gap-3">
         <div class="w-12 h-12 rounded-lg overflow-hidden shrink-0"><img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-cover" loading="lazy" /></div>
         <div class="flex-1 min-w-0"><p class="font-semibold text-sm truncate">${item.name}</p><p class="text-xs text-gray-400">R${item.price} each</p></div>
@@ -1245,7 +1245,7 @@
     function openLightbox() {
       const item = galleryItems[currentLightboxIndex];
       const content = document.getElementById('lightbox-content');
-      content.innerHTML = '<div class="w-full aspect-video relative"><img src="' + U(item.cat + ',' + item.label, 1200, 800) + '" alt="' + item.label + '" class="w-full h-full object-cover rounded-2xl" /><p class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg bg-black/40 px-3 py-1 rounded-full">' + item.label + '</p></div>';
+      content.innerHTML = '<div class="w-full aspect-video relative"><img src="' + P(GALLERY_PHOTOS[currentLightboxIndex % GALLERY_PHOTOS.length], 1200, 800) + '" alt="' + item.label + '" class="w-full h-full object-cover rounded-2xl" /><p class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg bg-black/40 px-3 py-1 rounded-full">' + item.label + '</p></div>';
       document.getElementById('lightbox').classList.add('active');
       document.body.style.overflow = 'hidden';
     }
