@@ -782,15 +782,15 @@
 
   // Unsplash direct photo URL builder (specific photo IDs, no search-based URLs)
   const P = function(id, w, h) { return 'https://images.unsplash.com/photo-' + id + '?w=' + (w||400) + '&h=' + (h||300) + '&fit=crop'; };
-  // Specific Unsplash photo IDs mapped to each menu item type
+  // Local images for menu items
   const MENU_IMG = {
-    chicken:P('1504674900247-0877df9cc836',400,300), bread:P('1509440159596-0249088772ff',400,300), pumpkin:P('1546069901-ba9599a7e63c',400,300),
-    beef:P('1555939594-58d7cb561ad1',400,300), corn:P('1551754655-cd27e38d2076',400,300), porridge:P('1547592166-23ac45744acd',400,300),
-    greens:P('1546069901-ba9599a7e63c',400,300), 'grilled-corn':P('1551754655-cd27e38d2076',400,300), biltong:P('1555939594-58d7cb561ad1',400,300),
-    vetkoek:P('1509440159596-0249088772ff',400,300), popsicle:P('1551024601-bec78aea704b',400,300), mahewu:P('1544145945-f1f0f3e5b1d1',400,300),
-    beer:P('1535958636474-b021ee887b13',400,300), tea:P('1556679343-c7306c1976bc',400,300), juice:P('1544145945-f1f0f3e5b1d1',400,300),
-    pudding:P('1551024601-bec78aea704b',400,300), balls:P('1551024601-bec78aea704b',400,300), feast:P('1504674900247-0877df9cc836',400,300),
-    platter:P('1504674900247-0877df9cc836',400,300)
+    chicken:'images/Makhaya Chicken.jpg', bread:'images/Sinkhwa semmbila.png', pumpkin:'images/Umbhidvo Wetintsanga.png',
+    beef:'images/Inyama Yenkhomo.jpg', corn:'images/Tinkhobe.jpg', porridge:'images/Siphuphe Setindlubu.jpg',
+    greens:'images/Umfino.jpg', 'grilled-corn':'images/Umbila  Grilled Corn.jpg', biltong:'images/Biltong.jpg',
+    vetkoek:'images/Emagwinya.jpg', popsicle:'images/Mahewu.jpg', mahewu:'images/Mahewu.jpg',
+    beer:'images/Umgombothi.jpg', tea:'images/Tea.jpg', juice:'images/Jungle Juice.jpg',
+    pudding:'images/Pudding.jpg', balls:'images/Tindluva.jpg', feast:'images/Khaya Family Feast .png',
+    platter:'images/Khaya Family Feast .png'
   };
   // Specific Unsplash photo IDs for gallery items (indexed by gallery item id)
   const GALLERY_PHOTOS = [
@@ -831,7 +831,7 @@
     noResults.classList.add('hidden');
     document.getElementById('menu-count').textContent = `(${items.length})`;
     grid.innerHTML = items.map((item, idx) => {
-      const imgUrl = MENU_IMG[item.img] || P('1504674900247-0877df9cc836', 400, 300);
+      const imgUrl = MENU_IMG[item.img] || 'images/Mahewu.jpg';
       return `<div class="menu-card glass-card rounded-2xl overflow-hidden reveal" style="transition-delay:${idx * 0.05}s">
         <div class="img-zoom h-44 bg-gradient-to-br from-primary/10 to-secondary/10 relative">
           <img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-cover" loading="lazy" />
@@ -920,7 +920,7 @@
     void badge.offsetWidth;
     badge.classList.add('animate-bounce-custom');
     container.innerHTML = cart.map((item, idx) => {
-      const imgUrl = MENU_IMG[item.img] || P('1504674900247-0877df9cc836', 100, 100);
+      const imgUrl = MENU_IMG[item.img] || 'images/Mahewu.jpg';
       return `<div class="glass-card rounded-xl p-3 flex items-center gap-3">
         <div class="w-12 h-12 rounded-lg overflow-hidden shrink-0"><img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-cover" loading="lazy" /></div>
         <div class="flex-1 min-w-0"><p class="font-semibold text-sm truncate">${item.name}</p><p class="text-xs text-gray-400">R${item.price} each</p></div>
