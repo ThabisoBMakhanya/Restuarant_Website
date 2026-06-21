@@ -17,7 +17,7 @@
       "name": "Kudla Kwasekhaya Online Restaurant",
       "description": "We Sell Organic Traditional Food. Authentic Swati cuisine made with love, served with pride.",
       "servesCuisine": "Swati",
-      "priceRange": "R20 - R200",
+      "priceRange": "E20 - E200",
       "telephone": "+268 7654 3210",
       "email": "hello@kudlakwasekhaya.com",
       "address": { "@type": "PostalAddress", "streetAddress": "Plot 45, Malkerns Valley", "addressLocality": "Eswatini" },
@@ -357,10 +357,10 @@
         <div id="cart-summary-details" class="hidden mt-4 space-y-2 text-left">
           <div id="cart-summary-items" class="max-h-48 overflow-y-auto space-y-2"></div>
           <hr class="border-gray-200 dark:border-gray-700" />
-          <div class="flex justify-between text-sm"><span>Subtotal:</span><span id="cart-subtotal">R0.00</span></div>
-          <div class="flex justify-between text-sm"><span>VAT (15%):</span><span id="cart-vat">R0.00</span></div>
-          <div class="flex justify-between text-sm"><span>Delivery Fee:</span><span id="cart-delivery">R0.00</span></div>
-          <div class="flex justify-between font-bold text-lg border-t border-gray-200 dark:border-gray-700 pt-2"><span>Total:</span><span id="cart-total" class="text-primary">R0.00</span></div>
+          <div class="flex justify-between text-sm"><span>Subtotal:</span><span id="cart-subtotal">E0.00</span></div>
+          <div class="flex justify-between text-sm"><span>VAT (15%):</span><span id="cart-vat">E0.00</span></div>
+          <div class="flex justify-between text-sm"><span>Delivery Fee:</span><span id="cart-delivery">E0.00</span></div>
+          <div class="flex justify-between font-bold text-lg border-t border-gray-200 dark:border-gray-700 pt-2"><span>Total:</span><span id="cart-total" class="text-primary">E0.00</span></div>
         </div>
         <button id="checkout-btn" class="mt-4 w-full px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed" disabled>Proceed to Checkout</button>
       </div>
@@ -596,10 +596,10 @@
     </div>
     <div id="cart-footer" class="hidden sticky bottom-0 glass p-4 space-y-3">
       <div class="space-y-1 text-sm">
-        <div class="flex justify-between"><span>Subtotal</span><span id="sidebar-subtotal">R0.00</span></div>
-        <div class="flex justify-between"><span>VAT (15%)</span><span id="sidebar-vat">R0.00</span></div>
-        <div class="flex justify-between"><span>Delivery Fee</span><span id="sidebar-delivery">R0.00</span></div>
-        <div class="flex justify-between font-bold text-lg border-t border-gray-200 dark:border-gray-700 pt-2"><span>Total</span><span id="sidebar-total" class="text-primary">R0.00</span></div>
+        <div class="flex justify-between"><span>Subtotal</span><span id="sidebar-subtotal">E0.00</span></div>
+        <div class="flex justify-between"><span>VAT (15%)</span><span id="sidebar-vat">E0.00</span></div>
+        <div class="flex justify-between"><span>Delivery Fee</span><span id="sidebar-delivery">E0.00</span></div>
+        <div class="flex justify-between font-bold text-lg border-t border-gray-200 dark:border-gray-700 pt-2"><span>Total</span><span id="sidebar-total" class="text-primary">E0.00</span></div>
       </div>
       <button id="sidebar-checkout" class="w-full px-6 py-3 gradient-bg text-white rounded-full font-semibold hover:shadow-lg transition-all">Proceed to Checkout</button>
     </div>
@@ -644,10 +644,10 @@
       <div id="co-summary-items" class="space-y-2 max-h-32 overflow-y-auto text-sm"></div>
       <hr class="border-gray-200 dark:border-gray-700" />
       <div class="space-y-1 text-sm">
-        <div class="flex justify-between"><span>Subtotal</span><span id="co-subtotal">R0.00</span></div>
-        <div class="flex justify-between"><span>VAT (15%)</span><span id="co-vat">R0.00</span></div>
-        <div class="flex justify-between"><span>Delivery Fee</span><span id="co-delivery">R0.00</span></div>
-        <div class="flex justify-between font-bold text-lg border-t border-gray-200 dark:border-gray-700 pt-2"><span>Total</span><span id="co-total" class="text-primary">R0.00</span></div>
+        <div class="flex justify-between"><span>Subtotal</span><span id="co-subtotal">E0.00</span></div>
+        <div class="flex justify-between"><span>VAT (15%)</span><span id="co-vat">E0.00</span></div>
+        <div class="flex justify-between"><span>Delivery Fee</span><span id="co-delivery">E0.00</span></div>
+        <div class="flex justify-between font-bold text-lg border-t border-gray-200 dark:border-gray-700 pt-2"><span>Total</span><span id="co-total" class="text-primary">E0.00</span></div>
       </div>
       <div class="flex gap-3">
         <button type="button" class="checkout-back w-1/3 px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-full font-semibold hover:border-primary transition-all" data-step="3">Back</button>
@@ -851,7 +851,7 @@
         <div class="img-zoom aspect-[4/3] bg-gradient-to-br from-primary/10 to-secondary/10 relative">
           <img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-cover" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-          <span class="absolute top-3 right-3 bg-white/90 dark:bg-darkbrown/90 text-xs font-bold px-2 py-1 rounded-full shadow">R${item.price}</span>
+          <span class="absolute top-3 right-3 bg-white/90 dark:bg-darkbrown/90 text-xs font-bold px-2 py-1 rounded-full shadow">E${item.price}</span>
           ${item.diet.length ? `<div class="absolute top-3 left-3 flex gap-1">${item.diet.map(d => `<span class="text-[10px] bg-white/80 dark:bg-darkbrown/80 px-1.5 py-0.5 rounded-full">${d === 'Vegetarian' ? '🌱' : d === 'Vegan' ? '🌿' : d === 'Gluten-Free' ? '🌾' : '🌶️'}</span>`).join('')}</div>` : ''}
         </div>
         <div class="p-4">
@@ -938,7 +938,7 @@
       const imgUrl = MENU_IMG[item.img] || 'images/Mahewu.jpg';
       return `<div class="glass-card rounded-xl p-3 flex items-center gap-3">
         <div class="w-12 h-12 rounded-lg overflow-hidden shrink-0"><img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-cover" loading="lazy" /></div>
-        <div class="flex-1 min-w-0"><p class="font-semibold text-sm truncate">${item.name}</p><p class="text-xs text-gray-400">R${item.price} each</p></div>
+        <div class="flex-1 min-w-0"><p class="font-semibold text-sm truncate">${item.name}</p><p class="text-xs text-gray-400">E${item.price} each</p></div>
         <div class="flex items-center gap-2">
           <button onclick="updateCartQty(${idx}, -1)" class="w-7 h-7 rounded-full border border-gray-300 dark:border-gray-600 flex items-center justify-center text-sm hover:border-primary transition-colors">&minus;</button>
           <span class="font-bold w-5 text-center text-sm">${item.qty}</span>
@@ -965,18 +965,18 @@
 
   function updateCartTotals() {
     const { subtotal, vat, delivery, total } = calcCart();
-    document.getElementById('sidebar-subtotal').textContent = 'R' + subtotal.toFixed(2);
-    document.getElementById('sidebar-vat').textContent = 'R' + vat.toFixed(2);
-    document.getElementById('sidebar-delivery').textContent = delivery ? 'R30.00' : 'R0.00';
-    document.getElementById('sidebar-total').textContent = 'R' + total.toFixed(2);
+    document.getElementById('sidebar-subtotal').textContent = 'E' + subtotal.toFixed(2);
+    document.getElementById('sidebar-vat').textContent = 'E' + vat.toFixed(2);
+    document.getElementById('sidebar-delivery').textContent = delivery ? 'E30.00' : 'E0.00';
+    document.getElementById('sidebar-total').textContent = 'E' + total.toFixed(2);
   }
 
   function updateCartSummary() {
     const { subtotal, vat, delivery, total } = calcCart();
-    document.getElementById('cart-subtotal').textContent = 'R' + subtotal.toFixed(2);
-    document.getElementById('cart-vat').textContent = 'R' + vat.toFixed(2);
-    document.getElementById('cart-delivery').textContent = delivery ? 'R30.00' : 'R0.00';
-    document.getElementById('cart-total').textContent = 'R' + total.toFixed(2);
+    document.getElementById('cart-subtotal').textContent = 'E' + subtotal.toFixed(2);
+    document.getElementById('cart-vat').textContent = 'E' + vat.toFixed(2);
+    document.getElementById('cart-delivery').textContent = delivery ? 'E30.00' : 'E0.00';
+    document.getElementById('cart-total').textContent = 'E' + total.toFixed(2);
   }
 
   function saveCart() { localStorage.setItem('kudlaCart', JSON.stringify(cart)); renderCartSidebar(); }
@@ -1057,10 +1057,10 @@
     const { subtotal, vat, delivery, total } = calcCart();
     const container = document.getElementById('co-summary-items');
     container.innerHTML = cart.map(item => '<div class="flex justify-between text-sm"><span>' + item.name + ' x' + item.qty + '</span><span>R' + (item.price * item.qty).toFixed(2) + '</span></div>').join('');
-    document.getElementById('co-subtotal').textContent = 'R' + subtotal.toFixed(2);
-    document.getElementById('co-vat').textContent = 'R' + vat.toFixed(2);
-    document.getElementById('co-delivery').textContent = delivery ? 'R30.00' : 'R0.00';
-    document.getElementById('co-total').textContent = 'R' + total.toFixed(2);
+    document.getElementById('co-subtotal').textContent = 'E' + subtotal.toFixed(2);
+    document.getElementById('co-vat').textContent = 'E' + vat.toFixed(2);
+    document.getElementById('co-delivery').textContent = delivery ? 'E30.00' : 'E0.00';
+    document.getElementById('co-total').textContent = 'E' + total.toFixed(2);
   }
 
   function placeOrder() {
@@ -1084,7 +1084,7 @@
     clearCart();
     document.getElementById('checkout-modal').classList.add('hidden');
     document.getElementById('order-number').textContent = orderNum;
-    document.getElementById('order-total-confirm').textContent = 'R' + total.toFixed(2);
+    document.getElementById('order-total-confirm').textContent = 'E' + total.toFixed(2);
     document.getElementById('order-confirm-modal').classList.remove('hidden');
     document.getElementById('order-confirm-modal').classList.add('flex');
     launchConfetti();
