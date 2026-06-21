@@ -833,7 +833,7 @@
     grid.innerHTML = items.map((item, idx) => {
       const imgUrl = MENU_IMG[item.img] || 'images/Mahewu.jpg';
       return `<div class="menu-card glass-card rounded-2xl overflow-hidden reveal" style="transition-delay:${idx * 0.05}s">
-        <div class="img-zoom h-44 bg-gradient-to-br from-primary/10 to-secondary/10 relative">
+        <div class="img-zoom aspect-[4/3] bg-gradient-to-br from-primary/10 to-secondary/10 relative">
           <img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-cover" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
           <span class="absolute top-3 right-3 bg-white/90 dark:bg-darkbrown/90 text-xs font-bold px-2 py-1 rounded-full shadow">R${item.price}</span>
@@ -888,7 +888,7 @@
   function renderBlog() {
     const grid = document.getElementById('blog-grid');
     grid.innerHTML = blogPosts.map(post => `<div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
-      <div class="h-44 bg-gradient-to-br from-primary/10 to-secondary/10 relative">
+      <div class="aspect-[4/3] bg-gradient-to-br from-primary/10 to-secondary/10 relative">
         <img src="${P(BLOG_PHOTOS[post.id - 1], 400, 300)}" alt="${post.title}" class="w-full h-full object-cover" loading="lazy" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
         <span class="absolute top-3 left-3 text-xs font-medium px-2 py-1 rounded-full bg-white/90 dark:bg-darkbrown/90 text-darkbrown dark:text-cream shadow">${post.cat}</span>
