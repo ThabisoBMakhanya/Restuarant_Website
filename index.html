@@ -273,10 +273,10 @@
       </div>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 reveal">
-      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text" data-target="2010">0</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Established</p></div>
-      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text" data-target="100">0</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Traditional Dishes</p></div>
-      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text" data-target="5000">0</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Happy Customers</p></div>
-      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text" data-target="15">0</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Organic Farms</p></div>
+      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text">Since 2010</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Established</p></div>
+      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text">100+</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Traditional Dishes</p></div>
+      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text">5,000+</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Happy Customers</p></div>
+      <div class="glass-card rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"><p class="stat-number font-serif text-4xl md:text-5xl font-bold gradient-text">15+</p><p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Organic Farms</p></div>
     </div>
     <div class="mt-20 reveal">
       <h3 class="font-serif text-3xl font-bold text-center text-darkbrown dark:text-cream mb-10">Our <span class="gradient-text">Core Values</span></h3>
@@ -754,12 +754,12 @@
   ];
 
   const testimonials = [
-    { id: 1, name: 'Nomsa Dlamini', location: 'Mbabane, Eswatini', rating: 5, text: "The Makhaya Chicken took me back to my grandmother's kitchen. Absolutely authentic and delicious! The organic ingredients really shine through.", avatar: 'ND', date: '2 weeks ago' },
-    { id: 2, name: 'James Khumalo', location: 'Johannesburg, SA', rating: 5, text: 'I never knew traditional Swati food could be this refined. The Khaya Family Feast was more than enough for three people. Incredible value!', avatar: 'JK', date: '1 month ago' },
-    { id: 3, name: 'Thandi Mamba', location: 'Manzini, Eswatini', rating: 5, text: "Kudla Kwasekhaya is a gem. Their Sinkhwa Sembila with chakalaka is the best I've had outside my mother's kitchen. So proud of this place!", avatar: 'TM', date: '3 weeks ago' },
-    { id: 4, name: 'Sarah Williams', location: 'London, UK', rating: 5, text: 'Visited Eswatini and stumbled upon this beautiful restaurant. The Umbhidvo Wetintsanga is life-changing! The team was so welcoming.', avatar: 'SW', date: '1 week ago' },
-    { id: 5, name: 'Bheki Simelane', location: 'Malkerns, Eswatini', rating: 5, text: 'As a local, I can confidently say this is the best traditional food in the valley. Fresh, organic, and made with genuine love. Highly recommend!', avatar: 'BS', date: '2 days ago' },
-    { id: 6, name: 'Lindiwe Nkosi', location: 'Durban, SA', rating: 5, text: 'The Umgombothi here is perfection. And paired with Inyama Yenkhomo? Heaven. This is Swati food at its finest. Will definitely order again!', avatar: 'LN', date: '5 days ago' },
+    { id: 1, name: 'Nomsa Dlamini', location: 'Mbabane, Eswatini', rating: 5, text: "The Makhaya Chicken took me back to my grandmother's kitchen. Absolutely authentic and delicious! The organic ingredients really shine through.", date: '2 weeks ago' },
+    { id: 2, name: 'James Khumalo', location: 'Johannesburg, SA', rating: 5, text: 'I never knew traditional Swati food could be this refined. The Khaya Family Feast was more than enough for three people. Incredible value!', date: '1 month ago' },
+    { id: 3, name: 'Thandi Mamba', location: 'Manzini, Eswatini', rating: 5, text: "Kudla Kwasekhaya is a gem. Their Sinkhwa Sembila with chakalaka is the best I've had outside my mother's kitchen. So proud of this place!", date: '3 weeks ago' },
+    { id: 4, name: 'Sarah Williams', location: 'London, UK', rating: 5, text: 'Visited Eswatini and stumbled upon this beautiful restaurant. The Umbhidvo Wetintsanga is life-changing! The team was so welcoming.', date: '1 week ago' },
+    { id: 5, name: 'Bheki Simelane', location: 'Malkerns, Eswatini', rating: 5, text: 'As a local, I can confidently say this is the best traditional food in the valley. Fresh, organic, and made with genuine love. Highly recommend!', date: '2 days ago' },
+    { id: 6, name: 'Lindiwe Nkosi', location: 'Durban, SA', rating: 5, text: 'The Umgombothi here is perfection. And paired with Inyama Yenkhomo? Heaven. This is Swati food at its finest. Will definitely order again!', date: '5 days ago' },
   ];
 
   const galleryItems = [
@@ -782,9 +782,6 @@
 
   // Unsplash direct photo URL builder (specific photo IDs, no search-based URLs)
   const P = function(id, w, h) { return 'https://images.unsplash.com/photo-' + id + '?w=' + (w||400) + '&h=' + (h||300) + '&fit=crop'; };
-  const GALLERY_COLORS = ['#D4693B','#2D5A27','#F4A236','#2C1810','#8B4513','#556B2F','#CD853F','#6B3A2A','#A0522D','#3C6E47','#B8860B','#5C4033','#8F7A55','#C4743D','#4A6741'];
-  const GALLERY_ICONS = ['fa-drumstick-bite','fa-bread-slice','fa-bowl-food','fa-utensils','fa-chair','fa-wine-glass','fa-tree','fa-paintbrush','fa-people-group','fa-hat-chef','fa-masks-theater','fa-fire','fa-wheat-awn','fa-candy-cane','fa-mug-saucer'];
-  const BLOG_ICONS = { Culture:'fa-book-open', Health:'fa-heart-pulse', Recipes:'fa-book', Events:'fa-calendar' };
   // Specific Unsplash photo IDs mapped to each menu item type
   const MENU_IMG = {
     chicken:P('1504674900247-0877df9cc836',400,300), bread:P('1509440159596-0249088772ff',400,300), pumpkin:P('1546069901-ba9599a7e63c',400,300),
