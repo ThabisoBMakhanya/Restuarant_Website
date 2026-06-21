@@ -792,6 +792,12 @@
     pudding:'images/Pudding.jpg', balls:'images/Tindluva.jpg', feast:'images/Khaya Family Feast .png',
     platter:'images/Khaya Family Feast .png'
   };
+  // Local images for gallery items (label -> path, falls back to Unsplash)
+  const GALLERY_LOCAL = {
+    'Makhaya Chicken':'images/Makhaya Chicken.jpg', 'Sinkhwa Sembila':'images/Sinkhwa semmbila.png',
+    'Inyama Yenkhomo':'images/Inyama Yenkhomo.jpg', 'Khaya Family Feast':'images/Khaya Family Feast .png',
+    'Tindluva Dessert':'images/Tindluva.jpg', 'Fresh Mahewu':'images/Mahewu.jpg'
+  };
   // Specific Unsplash photo IDs for gallery items (indexed by gallery item id)
   const GALLERY_PHOTOS = [
     '1504674900247-0877df9cc836','1509440159596-0249088772ff','1555939594-58d7cb561ad1','1504674900247-0877df9cc836',
@@ -800,7 +806,7 @@
     '1501785888046-af154c6a76f9','1551024601-bec78aea704b','1544145945-f1f0f3e5b1d1'
   ];
   // Specific Unsplash photo IDs for blog posts (indexed by blog post id - 1)
-  const BLOG_PHOTOS = ['1581595219315-a187b4c322a1','1544025162-d76694265947','1509440159596-0249088772ff','1414235077428-338989a2e8c0'];
+  const BLOG_PHOTOS = ['1761370571949-494293626cb9','1544025162-d76694265947','1509440159596-0249088772ff','1414235077428-338989a2e8c0'];
   // Specific Unsplash face photo IDs for testimonial avatars
   const AVATAR_PHOTOS = ['1494790108377-be9c29b29330','1507003211169-0a1dd7228f2d','1438761681033-6461ffad8d80','1472099645785-5658abf4ff4e','1534528741775-53994a69daeb','1500648767791-00dcc994a43e'];
 
@@ -873,7 +879,7 @@
     const items = currentGalleryFilter === 'all' ? galleryItems : galleryItems.filter(g => g.cat === currentGalleryFilter);
     grid.innerHTML = items.map(item => {
       const gIdx = galleryItems.indexOf(item);
-      const imgUrl = P(GALLERY_PHOTOS[item.id % GALLERY_PHOTOS.length], 400, 400);
+      const imgUrl = GALLERY_LOCAL[item.label] || P(GALLERY_PHOTOS[item.id % GALLERY_PHOTOS.length], 400, 400);
       return `<div class="relative rounded-xl overflow-hidden cursor-pointer group img-zoom gallery-item" data-index="${gIdx}">
         <div class="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10">
           <img src="${imgUrl}" alt="${item.label}" class="w-full h-full object-cover" loading="lazy" />
@@ -1242,7 +1248,7 @@
     function openLightbox() {
       const item = galleryItems[currentLightboxIndex];
       const content = document.getElementById('lightbox-content');
-      content.innerHTML = '<div class="w-full aspect-video relative"><img src="' + P(GALLERY_PHOTOS[currentLightboxIndex % GALLERY_PHOTOS.length], 1200, 800) + '" alt="' + item.label + '" class="w-full h-full object-cover rounded-2xl" /><p class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg bg-black/40 px-3 py-1 rounded-full">' + item.label + '</p></div>';
+      content.innerHTML = '<div class="w-full aspect-video relative"><img src="' + (GALLERY_LOCAL[item.label] || P(GALLERY_PHOTOS[currentLightboxIndex % GALLERY_PHOTOS.length], 1200, 800)) + '" alt="' + item.label + '" class="w-full h-full object-cover rounded-2xl" /><p class="absolute bottom-4 left-4 text-white font-semibold text-lg drop-shadow-lg bg-black/40 px-3 py-1 rounded-full">' + item.label + '</p></div>';
       document.getElementById('lightbox').classList.add('active');
       document.body.style.overflow = 'hidden';
     }
